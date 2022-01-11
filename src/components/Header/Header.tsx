@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HeaderWrap = styled.header`
   display: flex;
@@ -26,9 +27,9 @@ function Header() {
     <HeaderWrap className="Header">
       <Logo>Zinmax</Logo>
       <Navbar className="navbar">
-        <div>Home</div>
-        <div>Portfolio</div>
-        <div>Contact</div>
+        <Link to="/">Home</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/contact">Contact</Link>
       </Navbar>
     </HeaderWrap>
   );

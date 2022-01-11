@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HomeWrap = styled.main`
+const HomeWrap = styled.div`
   display: flex;
   width: 100%;
   padding: 20px 0;
