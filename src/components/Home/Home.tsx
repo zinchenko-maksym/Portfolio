@@ -9,17 +9,21 @@ const HomeWrap = styled.div`
   font-weight: 600;
   flex-flow: column wrap;
   align-items: center;
-  color: #2196F3;
+
+  background-color: #2196F3;
 `;
 const Photo = styled.img`
   width: 200px;
   height: 200px;
-  background-color: red;
+  background-color: green;
   border-radius: 120px;
 `;
 const AboutMeHeader = styled.h1`
-  font-size: 1.2em;
+  font-size: 1.7em;
   margin: 0.3em 0;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 20px auto 6px;
 `;
 const AboutMe = styled.div`
 padding: 0 1em;
@@ -28,28 +32,42 @@ padding: 0 1em;
 
 const AboutMeText = styled.p`
   margin: 0;
+  color: #fff;
 `;
 const Resume = styled.button`
-  margin: 0;
+  align-self: flex-start;
+  margin: 16px;
+  width: 186px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.32);
+  background-color: #fff;
+  font-size: 0.9em;
 `;
+const NextPageLink = styled.a`
+  margin: 30px 10px 10px 10px;
+  color: #fff;
+  align-self: flex-end;
+`;
+
 function Home() {
   return (
     <HomeWrap>
       <Photo />
       <AboutMe>
-        <AboutMeHeader> Hello, my name is Maksym</AboutMeHeader>
+        <AboutMeHeader> Hi, I&apos;m Maksym Web Developer</AboutMeHeader>
         <AboutMeText>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Laudantium voluptates doloribus quasi nesciunt, esse earum! Esse vel
-          saepe eaque doloribus ratione eius dolor obcaecati vitae iure!
-          Porro laudantium est quibusdam.
+          I started learning web development couple years ago when I was living in Ukraine.
+          Now I&apos;m located in Chicago US.
+          You can check my portfolio or download my resume.
         </AboutMeText>
       </AboutMe>
-      <Resume>Download my resume</Resume>
-      <div>
-        Look at my portfolio -
+      <Resume>Download resume</Resume>
+      <NextPageLink href="#">
+        Check my portfolio -
         {'>'}
-      </div>
+      </NextPageLink>
     </HomeWrap>
   );
 }

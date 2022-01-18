@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 const HeaderWrap = styled.header`
   display: flex;
   width: 100%;
-  padding: 20px 0;
+  height: 70px;
   font-size:  1.2em;
-  background-color: #2196F3;
+  background-color: #3687FF;
   color: #fff;
   font-weight: 600;
+  align-items: center;
 `;
 const Navbar = styled.nav`
   display: flex;
@@ -21,6 +22,8 @@ const Logo = styled.div`
   width: 30%;
   align-items: center;
   justify-content: center;
+  font-family: "Mistral";
+  font-size: 1.5em;
 `;
 function Header() {
   return (
