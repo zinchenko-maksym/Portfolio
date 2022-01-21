@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Portfolio from '../Portfolio/Portfolio';
 import Home from '../Home/Home';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,7 +31,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-      <footer>Socials</footer>
+      <Footer />
       <GlobalStyle />
     </ThemeProvider>
   );

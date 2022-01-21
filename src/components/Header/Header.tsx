@@ -50,6 +50,8 @@ const MenuButton = styled.div`
 const StyledLink = styled(Link)`
   color: white;
   padding: 8px;
+  width: 50%;
+  text-align: right;
 `;
 
 function Header() {
