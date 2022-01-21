@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Background from '../Background/Background';
 
 const HomeWrap = styled.div`
   display: flex;
   width: 100%;
-  padding: 20px 0;
   font-size:  1.2em;
   font-weight: 600;
   flex-flow: column wrap;
   align-items: center;
-
-  background-color: #2196F3;
 `;
 const Photo = styled.img`
+  margin-top: 20px;
   width: 200px;
   height: 200px;
   background-color: green;
@@ -68,6 +67,7 @@ function Home() {
         Check my portfolio -
         {'>'}
       </NextPageLink>
+      <Background />
     </HomeWrap>
   );
 }
