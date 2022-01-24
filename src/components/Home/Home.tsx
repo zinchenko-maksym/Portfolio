@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Background from '../Background/Background';
+import { Link } from 'react-router-dom';
 
 const HomeWrap = styled.div`
   display: flex;
-  width: 100%;
   font-size:  1.2em;
   font-weight: 600;
   flex-flow: column wrap;
@@ -44,7 +43,8 @@ const Resume = styled.button`
   background-color: #fff;
   font-size: 0.9em;
 `;
-const NextPageLink = styled.a`
+
+const NextPageLink = styled(Link)`
   margin: 30px 10px 10px 10px;
   color: #fff;
   align-self: flex-end;
@@ -63,11 +63,10 @@ function Home() {
         </AboutMeText>
       </AboutMe>
       <Resume>Download resume</Resume>
-      <NextPageLink href="#">
+      <NextPageLink to="/portfolio">
         Check my portfolio -
         {'>'}
       </NextPageLink>
-      <Background />
     </HomeWrap>
   );
 }

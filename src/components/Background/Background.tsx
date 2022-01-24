@@ -5,7 +5,9 @@ const BackgroundWrap = styled.div`
   width: 100%;
   position: absolute;
   background-color: #3687FF;
-  height: 110%;   /*fix this*/
+  height: 100%;   /*fix this*/
+  top: 0;
+  
   z-index: -1;
 `;
 
