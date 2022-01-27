@@ -11,8 +11,8 @@ const HeaderWrap = styled.header`
   display: flex;
   height: 60px;
   font-size:  1.2em;
-  background-color: #3687FF;
-  color: #fff;
+  background-color: ${(props) => props.theme.mainColors.dark};
+  color: ${(props) => props.theme.textColors.main};
   font-weight: 600;
   align-items: center;
   position: fixed;
@@ -33,7 +33,7 @@ const Navbar = styled.nav<menuButton>`
     align-items: flex-end;
     top: 99%;
     width: 100%;
-    background-color: #3687FF;
+    background-color: ${(props) => props.theme.mainColors.dark};
     padding: 5px 10px;
   }
 `;
@@ -49,7 +49,7 @@ const MenuButton = styled.div`
   margin-right: 10px;
 `;
 const StyledLink = styled(Link)`
-  color: white;
+  color: ${(props) => props.theme.textColors.main};
   padding: 8px;
   width: 50%;
   text-align: right;

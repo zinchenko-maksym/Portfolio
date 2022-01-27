@@ -6,13 +6,13 @@ import {
 } from 'react-icons/fa';
 
 const FooterWrap = styled.footer`
-  background-color: #3687FF;
+  background-color: ${(props) => props.theme.mainColors.dark};
   display: flex;
   justify-content: center;
 `;
 const SocialLink = styled.a`
   display: flex;
-  color: white;
+  color: ${(props) => props.theme.textColors.main};
   margin: 5px 10px;
   font-size: 1.8rem;
   text-align: center;

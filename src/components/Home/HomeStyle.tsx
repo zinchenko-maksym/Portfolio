@@ -25,11 +25,11 @@ export const AboutMeHeader = styled.h1`
 `;
 export const AboutMe = styled.div`
 padding: 0 1em;
-  color: black;
+  color: ${(props) => props.theme.textColors.secondary};
 `;
 export const AboutMeText = styled.p`
   margin: 0;
-  color: #fff;
+  color: ${(props) => props.theme.textColors.main};
 `;
 
 export const Circle = styled.span`
@@ -37,12 +37,12 @@ export const Circle = styled.span`
     position: absolute;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: ${(props) => props.theme.mainColors.dark};
     display: flex;
     height: 34px;
     width: 34px;
     border-radius: 17px;
-    color: white;
+    color: ${(props) => props.theme.textColors.main};
     left: 10%;
     transition: left 0.4s ease-out;
 `;
@@ -70,9 +70,9 @@ export const Resume = styled.button`
   height: 50px;
   border-radius: 30px;
   box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.32);
-  background-color: #fff;
+  background-color: ${(props) => props.theme.mainColors.light};
   font-size: 0.9em;
-  border: 2px solid black;
+  border: 2px solid ${(props) => props.theme.mainColors.medium};
   &:hover{
     cursor: pointer;
     ${ResumeBtnText} {

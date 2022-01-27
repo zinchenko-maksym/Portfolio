@@ -7,6 +7,7 @@ import Home from '../Home/Home';
 import ContactPage from '../ContactPage/ContactPage';
 import Footer from '../Footer/Footer';
 import Background from '../Background/Background';
+import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
   html, body{
@@ -28,9 +29,6 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
   }
 `;
-const theme = {
-  main: 'mediumseagreen',
-};
 
 function App() {
   return (
