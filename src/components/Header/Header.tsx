@@ -15,7 +15,8 @@ const HeaderWrap = styled.header`
   color: #fff;
   font-weight: 600;
   align-items: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
 `;
 const Navbar = styled.nav<menuButton>`
@@ -30,8 +31,8 @@ const Navbar = styled.nav<menuButton>`
     position: absolute;
     flex-direction: column;
     align-items: flex-end;
-    top: 100%;
-    width: calc(100% - 20px);
+    top: 99%;
+    width: 100%;
     background-color: #3687FF;
     padding: 5px 10px;
   }
@@ -61,7 +62,7 @@ function Header() {
   };
   return (
     <HeaderWrap className="Header">
-      <Logo>Zinmax</Logo>
+      <Logo>Zinmaks</Logo>
       <Navbar isOpen={menuOpen} className="navbar">
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/portfolio">Portfolio</StyledLink>
