@@ -59,7 +59,7 @@ export const ResumeBtnHover = styled.span`
   transition: left 0.4s ease-out, opacity 0.3s ease-in;
 `;
 
-export const Resume = styled.button`
+export const Resume = styled.a`
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -73,6 +73,7 @@ export const Resume = styled.button`
   background-color: ${(props) => props.theme.mainColors.light};
   font-size: 0.9em;
   border: 2px solid ${(props) => props.theme.mainColors.medium};
+  color: ${(props) => props.theme.mainColors.dark};
   &:hover{
     cursor: pointer;
     ${ResumeBtnText} {

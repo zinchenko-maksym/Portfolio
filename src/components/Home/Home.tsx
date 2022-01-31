@@ -14,7 +14,7 @@ function Home() {
           You can check my portfolio or download my resume.
         </Styled.AboutMeText>
       </Styled.AboutMe>
-      <Styled.Resume>
+      <Styled.Resume href="https://docs.google.com/uc?export=download&id=1_SR1_un469Hdmwk6gcKbu3ExSnllUbAD">
         <Styled.Circle><FaDownload /></Styled.Circle>
         {' '}
         <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
