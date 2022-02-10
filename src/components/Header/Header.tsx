@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import HamburgerIcon from '../HamburgerIcon/HamburgerIcon';
 
-interface menuButton {
+interface MenuButton {
   isOpen: boolean;
 }
 
@@ -19,7 +19,7 @@ const HeaderWrap = styled.header`
   width: 100%;
   justify-content: space-between;
 `;
-const Navbar = styled.nav<menuButton>`
+const Navbar = styled.nav<MenuButton>`
   display: ${(props) => (props.isOpen ? 'flex' : 'none')};
   width: 70%;
   justify-content: space-around;
@@ -66,6 +66,7 @@ function Header() {
       <Navbar isOpen={menuOpen} className="navbar">
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/portfolio">Portfolio</StyledLink>
+        <StyledLink to="/skills">Skills</StyledLink>
         <StyledLink to="/contact">Contact</StyledLink>
       </Navbar>
       <MenuButton onClick={toggleMenu}>

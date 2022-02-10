@@ -8,6 +8,7 @@ import ContactPage from '../ContactPage/ContactPage';
 import Footer from '../Footer/Footer';
 import Background from '../Background/Background';
 import theme from './theme';
+import Skills from '../Skills/Skills';
 
 const GlobalStyle = createGlobalStyle`
   html, body{
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="contact" element={<ContactPage />} />
+        <Route path="skills" element={<Skills />} />
       </Routes>
       <Footer />
       <GlobalStyle />

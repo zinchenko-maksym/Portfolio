@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import memoryGameImg from '../../assets/memory-game.png';
 
 const PortfolioWrap = styled.main`
   padding-top: 100px;
@@ -9,12 +10,16 @@ const Project = styled.article`
   width: 80%;
   background-color: ${(props) => props.theme.mainColors.medium};
 `;
+const ProjectLink = styled.a`
+  display: flex;
+  height: auto;
+  width: 100%;
+`;
 const ProjectImage = styled.img`
-  height: 300px;
   width: 100%;
 `;
 const ProjectDescription = styled.div`
-  height: 300px;
+  height: 200px;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -34,7 +39,9 @@ function Portfolio() {
   return (
     <PortfolioWrap>
       <Project>
-        <ProjectImage />
+        <ProjectLink href="https://memory-cards-zm.herokuapp.com">
+          <ProjectImage src={memoryGameImg} />
+        </ProjectLink>
         <ProjectDescription>
           <ProjectTitle>Memory Game</ProjectTitle>
           <ProjectTools>
@@ -45,7 +52,9 @@ function Portfolio() {
         </ProjectDescription>
       </Project>
       <Project>
-        <ProjectImage />
+        <ProjectLink href="https://memory-cards-zm.herokuapp.com">
+          <ProjectImage src={memoryGameImg} />
+        </ProjectLink>
         <ProjectDescription>
           <ProjectTitle>Memory Game</ProjectTitle>
           <ProjectTools>
