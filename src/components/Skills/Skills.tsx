@@ -25,7 +25,7 @@ function Skills() {
     },
     {
       name: 'ReactJS',
-      subSkills: [{ name: 'Redux', mastery: 90 }, { name: 'StyledComponents', mastery: 90 }],
+      subSkills: [{ name: 'Redux', mastery: 100 }, { name: 'Styled Components', mastery: 90 }],
       mastery: 90,
     },
     {

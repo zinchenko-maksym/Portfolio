@@ -15,7 +15,7 @@ interface ScaleProps {
   percent: number;
 }
 interface SubSkillProps {
-  display: boolean;
+  $display: boolean;
 }
 
 const SkillWrap = styled.div`
@@ -29,7 +29,7 @@ const SkillWrap = styled.div`
 const SkillName = styled.p`
   display: flex;
 `;
-const SkillMastery = styled.p`
+const SkillMastery = styled.div`
   display: flex;
   margin-right: 10px;
   font-size: 0.8em;
@@ -42,14 +42,16 @@ const SkillMasteryScale = styled.div<ScaleProps>`
   background-color: ${(props) => props.theme.mainColors.secondary};
 `;
 const SubSkill = styled.div<SubSkillProps>`
-  display: ${(props) => (props.display ? 'flex' : 'none')};
-  font-size: 0.8em;
+  display: ${(props) => (props.$display ? 'flex' : 'none')};
+  flex-flow: row wrap;
+    justify-content: space-between;
+  font-size: 0.7em;
   margin: 10px 0 10px 10%;
   border-radius: 2px;
   width: 90%;
 `;
 const OpenSubskillsBtn = styled.div<SubSkillProps>`
-  display: ${(props) => (props.display ? 'flex' : 'none')};
+  display: ${(props) => (props.$display ? 'flex' : 'none')};
   position: absolute;
   right: -20px;
 `;
@@ -61,10 +63,12 @@ function Skill({ skillName, mastery, subSkills }: SkillProps) {
   };
   const mapSubSkills = subSkills.map(
     (subSkill) => (
-      <SubSkill key={subSkill.name} display={subSkillDisplay}>
-        {subSkill.name}
-        {subSkill.mastery}
-        %
+      <SubSkill key={subSkill.name} $display={subSkillDisplay}>
+        <SkillName>{subSkill.name}</SkillName>
+        <SkillMastery>
+          {subSkill.mastery}
+          %
+        </SkillMastery>
         <SkillMasteryScale percent={subSkill.mastery} />
       </SubSkill>
     ),
@@ -78,7 +82,7 @@ function Skill({ skillName, mastery, subSkills }: SkillProps) {
         {mastery}
         %
         <OpenSubskillsBtn
-          display={!!subSkills.length}
+          $display={!!subSkills.length}
           onClick={toggleSubscills}
         >
           &#9658;
