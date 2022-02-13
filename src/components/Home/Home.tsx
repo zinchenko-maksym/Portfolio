@@ -1,17 +1,20 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import * as Styled from './HomeStyle';
+import ProfilePicture from './ProfilePicture/ProfilePicture';
 
 function Home() {
   return (
     <Styled.HomeWrap>
-      <Styled.Photo />
+      <ProfilePicture />
       <Styled.AboutMe>
-        <Styled.AboutMeHeader> Hi, I&apos;m Maksym Web Developer</Styled.AboutMeHeader>
+        <Styled.AboutMeHeader>
+          Hello! I&apos;m
+          <br />
+          <Styled.MyName> Maksym Zinchenko</Styled.MyName>
+        </Styled.AboutMeHeader>
         <Styled.AboutMeText>
-          I started learning web development couple years ago when I was living in Ukraine.
-          Now I&apos;m located in Chicago US.
-          You can check my portfolio or download my resume.
+          Web Developer located in Chicago, IL.
         </Styled.AboutMeText>
       </Styled.AboutMe>
       <Styled.Resume href="https://docs.google.com/uc?export=download&id=1_SR1_un469Hdmwk6gcKbu3ExSnllUbAD">
@@ -20,9 +23,6 @@ function Home() {
         <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
         <Styled.ResumeBtnHover>Download</Styled.ResumeBtnHover>
       </Styled.Resume>
-      <Styled.NextPageLink to="/portfolio">
-        Check portfolio
-      </Styled.NextPageLink>
     </Styled.HomeWrap>
   );
 }

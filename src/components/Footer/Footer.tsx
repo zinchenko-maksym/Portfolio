@@ -5,13 +5,13 @@ import {
 } from 'react-icons/fa';
 
 const FooterWrap = styled.footer`
-  background-color: ${(props) => props.theme.mainColors.dark};
+  background-color: ${(props) => props.theme.mainColors.primary};
   display: flex;
   justify-content: center;
 `;
 const SocialLink = styled.a`
   display: flex;
-  color: ${(props) => props.theme.textColors.main};
+  color: ${(props) => props.theme.mainColors.white};
   margin: 5px 10px;
   font-size: 1.8rem;
   text-align: center;

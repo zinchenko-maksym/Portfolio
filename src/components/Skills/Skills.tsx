@@ -7,18 +7,51 @@ const SkillsWrap = styled.section`
   font-size:  1.2em;
   font-weight: 600;
   flex-flow: column wrap;
-  padding-top: 60px;
-  max-width: 400px;
+  padding: 60px 10px;
+  background-color: ${(props) => props.theme.mainColors.primary};
 `;
 
 function Skills() {
+  const skills = [
+    {
+      name: 'HTML5',
+      subSkills: [],
+      mastery: 100,
+    },
+    {
+      name: 'CSS',
+      subSkills: [],
+      mastery: 90,
+    },
+    {
+      name: 'ReactJS',
+      subSkills: [{ name: 'Redux', mastery: 90 }, { name: 'StyledComponents', mastery: 90 }],
+      mastery: 90,
+    },
+    {
+      name: 'Node.js',
+      subSkills: [],
+      mastery: 90,
+    },
+    {
+      name: 'Databases',
+      subSkills: [],
+      mastery: 90,
+    },
+  ];
+  const displaySkills = skills.map(
+    (skill) => (
+      <Skill
+        subSkills={skill.subSkills}
+        key={skill.name}
+        skillName={skill.name}
+        mastery={skill.mastery}
+      />
+    ),
+  );
   return (
     <SkillsWrap>
-      <Skill skillName="HTML" mastery={100} />
-      <Skill skillName="CSS" mastery={90} />
-      <Skill skillName="ReactJS" mastery={90} />
-      <Skill skillName="Node.js" mastery={60} />
-      <Skill skillName="SQL" mastery={90} />
+      {displaySkills}
     </SkillsWrap>
   );
 }

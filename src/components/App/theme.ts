@@ -2,14 +2,26 @@ import { DefaultTheme } from 'styled-components';
 
 const defaultTheme : DefaultTheme = {
   mainColors: {
-    dark: '#3687FF',
-    medium: '#95C0FF',
-    light: '#C7DEFF',
+    primary: '#2b6777',
+    secondary: '#c8d8e4',
+    tertiary: '#52ab98',
+    white: '#fff',
   },
   textColors: {
-    main: '#fff',
+    primary: '#fff',
     secondary: '#000',
   },
 };
-
+export const secondTheme : DefaultTheme = {
+  mainColors: {
+    primary: '#4ABDAC',
+    secondary: '#fc4a1a',
+    tertiary: '#f78733',
+    white: '#fff',
+  },
+  textColors: {
+    primary: '#fff',
+    secondary: '#000',
+  },
+};
 export default defaultTheme;

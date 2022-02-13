@@ -1,51 +1,44 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import myPhoto from '../../assets/MyPhoto.jpg';
 
-export const HomeWrap = styled.div`
+export const HomeWrap = styled.section`
   display: flex;
   font-size:  1.2em;
   font-weight: 600;
   flex-flow: column wrap;
   align-items: center;
   padding-top: 60px;
+  background-color: ${(props) => props.theme.mainColors.primary};
 `;
 export const Photo = styled.img`
   margin-top: 20px;
-  width: 200px;
-  height: 200px;
-  background-color: green;
+  width: 240px;
+  height: 240px;
+  background-image: url(${myPhoto});
+  background-size: 100%;
   border-radius: 120px;
 `;
 export const AboutMeHeader = styled.h1`
   font-size: 1.7em;
   margin: 0.3em 0;
-  text-align: center;
+  text-align: left;
   line-height: 1.4em;
   margin: 20px auto 6px;
 `;
+export const MyName = styled.span`
+  font-size: 1.4em;
+  font-weight: 600;
+`;
 export const AboutMe = styled.div`
 padding: 0 1em;
-  color: ${(props) => props.theme.textColors.secondary};
+  color: ${(props) => props.theme.textColors.primary};
 `;
 export const AboutMeText = styled.p`
-  margin: 0;
-  color: ${(props) => props.theme.textColors.main};
+  margin: 10px 0;
+  color: ${(props) => props.theme.mainColors.secondary};
 `;
 
-export const Circle = styled.span`
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    background-color: ${(props) => props.theme.mainColors.dark};
-    display: flex;
-    height: 34px;
-    width: 34px;
-    border-radius: 17px;
-    color: ${(props) => props.theme.textColors.main};
-    left: 10%;
-    transition: left 0.4s ease-out;
-`;
 export const ResumeBtnText = styled.span`
   position: absolute;
   left: 36%;
@@ -58,7 +51,16 @@ export const ResumeBtnHover = styled.span`
   left: 30%;
   transition: left 0.4s ease-out, opacity 0.3s ease-in;
 `;
-
+export const Circle = styled.span`
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: ${(props) => props.theme.textColors.primary};
+    left: 15%;
+    transition: left 0.4s ease-out;
+`;
 export const Resume = styled.a`
   display: flex;
   position: relative;
@@ -68,12 +70,12 @@ export const Resume = styled.a`
   margin: 16px;
   width: 174px;
   height: 50px;
-  border-radius: 30px;
+  border-radius: 18px;
   box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.32);
-  background-color: ${(props) => props.theme.mainColors.light};
+  background-color: ${(props) => props.theme.mainColors.tertiary};
   font-size: 0.9em;
-  border: 2px solid ${(props) => props.theme.mainColors.medium};
-  color: ${(props) => props.theme.mainColors.dark};
+  border: 2px solid ${(props) => props.theme.mainColors.primary};
+  color: ${(props) => props.theme.textColors.primary};
   &:hover{
     cursor: pointer;
     ${ResumeBtnText} {
@@ -85,36 +87,8 @@ export const Resume = styled.a`
       left: 15%;
     }
     ${Circle} {
-      left: 70%;
+      left: 75%;
     }
   }
 
-`;
-
-export const NextPageLink = styled(Link)`
-  margin: 30px 30px;
-  font-size: 0.8em;
-  color: #fff;
-  align-self: flex-end;
-  position: relative;
-    background-image: linear-gradient(to right, #fff, #fff);
-    background-position: bottom  center;
-    background-repeat: no-repeat;
-    background-size: 80% 2px;
-    transition: background-size .5s ease;
-
-  &:after{
-    content: '»';
-    position: absolute;
-    font-size: 1.4rem;
-    top: -0.3rem;
-    right: -16px;
-    transition: 0.5s;
-  }
-  &:hover{
-    background-size: 100% 2px;
-    &:after{
-      right: -13px;
-    }
-  }
 `;

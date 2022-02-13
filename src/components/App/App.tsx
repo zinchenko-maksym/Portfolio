@@ -1,21 +1,19 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from '../Header/Header';
 import Portfolio from '../Portfolio/Portfolio';
 import Home from '../Home/Home';
 import ContactPage from '../ContactPage/ContactPage';
 import Footer from '../Footer/Footer';
-import Background from '../Background/Background';
 import theme from './theme';
 import Skills from '../Skills/Skills';
 
 const GlobalStyle = createGlobalStyle`
+
   html, body{
     
   }
   body {
-    font-family: Times New Roman;
     margin: 0;
   }
 
@@ -24,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: Lora, sans-serif;
   }
   #root{
     height: 100%;
@@ -35,15 +34,12 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="skills" element={<Skills />} />
-      </Routes>
+      <Home />
+      <Portfolio />
+      <Skills />
+      <ContactPage />
       <Footer />
       <GlobalStyle />
-      <Background />
     </ThemeProvider>
   );
 }

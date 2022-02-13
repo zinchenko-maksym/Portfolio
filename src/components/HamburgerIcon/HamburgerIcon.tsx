@@ -17,7 +17,7 @@ const Burger = styled.div`
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
-  background-color: white;
+  background-color: ${(props) => props.theme.textColors.secondary};
   transform-origin: 1px;
   transition: all 0.3s linear;
 `;

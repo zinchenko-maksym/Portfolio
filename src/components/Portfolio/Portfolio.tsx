@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import memoryGameImg from '../../assets/memory-game.png';
 
-const PortfolioWrap = styled.main`
-  padding-top: 100px;
+const PortfolioWrap = styled.section`
+  background-color: ${(props) => props.theme.mainColors.secondary};
 `;
 const Project = styled.article`
-  margin: 0px auto  40px;
+  margin: 0px auto;
+  padding: 40px 0 20px;
   width: 80%;
-  background-color: ${(props) => props.theme.mainColors.medium};
+  background-color: ${(props) => props.theme.mainColors.secondary};
 `;
 const ProjectLink = styled.a`
   display: flex;

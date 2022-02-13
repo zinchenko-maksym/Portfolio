@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import HamburgerIcon from '../HamburgerIcon/HamburgerIcon';
 
 interface MenuButton {
@@ -11,13 +10,14 @@ const HeaderWrap = styled.header`
   display: flex;
   height: 60px;
   font-size:  1.2em;
-  background-color: ${(props) => props.theme.mainColors.dark};
-  color: ${(props) => props.theme.textColors.main};
+  background-color: ${(props) => props.theme.mainColors.white};
+  color: ${(props) => props.theme.textColors.secondary};
   font-weight: 600;
   align-items: center;
   position: fixed;
   width: 100%;
   justify-content: space-between;
+  z-index: 1;
 `;
 const Navbar = styled.nav<MenuButton>`
   display: ${(props) => (props.isOpen ? 'flex' : 'none')};
@@ -33,7 +33,7 @@ const Navbar = styled.nav<MenuButton>`
     align-items: flex-end;
     top: 99%;
     width: 100%;
-    background-color: ${(props) => props.theme.mainColors.dark};
+    background-color: ${(props) => props.theme.mainColors.white};
     padding: 5px 10px;
   }
 `;
@@ -48,8 +48,8 @@ const Logo = styled.div`
 const MenuButton = styled.div`
   margin-right: 10px;
 `;
-const StyledLink = styled(Link)`
-  color: ${(props) => props.theme.textColors.main};
+const StyledLink = styled.a`
+  color: ${(props) => props.theme.textColors.secondary};
   padding: 8px;
   width: 50%;
   text-align: right;
@@ -64,10 +64,10 @@ function Header() {
     <HeaderWrap className="Header">
       <Logo>Zinmaks</Logo>
       <Navbar isOpen={menuOpen} className="navbar">
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/portfolio">Portfolio</StyledLink>
-        <StyledLink to="/skills">Skills</StyledLink>
-        <StyledLink to="/contact">Contact</StyledLink>
+        <StyledLink>About Me</StyledLink>
+        <StyledLink>Portfolio</StyledLink>
+        <StyledLink>Skills</StyledLink>
+        <StyledLink>Contact</StyledLink>
       </Navbar>
       <MenuButton onClick={toggleMenu}>
         <HamburgerIcon />
