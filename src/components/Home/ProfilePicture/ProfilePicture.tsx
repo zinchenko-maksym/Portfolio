@@ -3,11 +3,12 @@ import {
   FaFacebookF, FaTelegramPlane, FaLinkedinIn, FaGithubSquare,
 } from 'react-icons/fa';
 import * as Styled from './ProfilePictureStyle';
+import myPhoto from '../../../assets/MyPhoto.jpg';
 
 function ProfilePicture() {
   return (
     <Styled.ProfilePicture>
-      <Styled.Photo />
+      <Styled.Photo src={myPhoto} />
       <Styled.Socials>
         <Styled.SocialLink href="https://t.me/Maksym_Zinchenko">
           <FaTelegramPlane />

@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   * {
+    border: 0;
+    outline: none;
     padding: 0;
     margin: 0;
     text-decoration: none;

@@ -3,14 +3,15 @@ import myPhoto from '../../../assets/MyPhoto.jpg';
 
 export const ProfilePicture = styled.div`
   position: relative;
+
 `;
 export const Photo = styled.img`
   margin-top: 20px;
   width: 240px;
   height: 240px;
-  background-image: url(${myPhoto});
-  background-size: 100%;
-  border-radius: 120px;
+  background-size: 101%;
+  background-color: ${(props) => props.theme.mainColors.primary};
+  border-radius: 100%;
 `;
 
 export const Socials = styled.div`

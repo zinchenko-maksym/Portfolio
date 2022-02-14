@@ -5,7 +5,7 @@ import ProfilePicture from './ProfilePicture/ProfilePicture';
 
 function Home() {
   return (
-    <Styled.HomeWrap>
+    <Styled.HomeWrap id="About">
       <ProfilePicture />
       <Styled.AboutMe>
         <Styled.AboutMeHeader>

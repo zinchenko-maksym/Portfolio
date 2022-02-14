@@ -50,7 +50,7 @@ function Skills() {
     ),
   );
   return (
-    <SkillsWrap>
+    <SkillsWrap id="Skills">
       {displaySkills}
     </SkillsWrap>
   );

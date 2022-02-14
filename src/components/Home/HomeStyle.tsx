@@ -67,8 +67,8 @@ export const Resume = styled.a`
   justify-content: space-around;
   align-items: center;
   align-self: flex-start;
-  margin: 16px;
-  width: 174px;
+  margin: 10px 16px 40px;
+  width: 190px;
   height: 50px;
   border-radius: 18px;
   box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.32);

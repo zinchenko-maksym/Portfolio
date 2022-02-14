@@ -3,66 +3,64 @@ import styled from 'styled-components';
 import memoryGameImg from '../../assets/memory-game.png';
 
 const PortfolioWrap = styled.section`
-  background-color: ${(props) => props.theme.mainColors.secondary};
-`;
-const Project = styled.article`
-  margin: 0px auto;
-  padding: 40px 0 20px;
-  width: 80%;
-  background-color: ${(props) => props.theme.mainColors.secondary};
-`;
-const ProjectLink = styled.a`
   display: flex;
-  height: auto;
-  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: ${(props) => props.theme.mainColors.secondary};
+  padding: 40px 0;
+`;
+const Project = styled.a`
+  width: 80%;
+  margin: 20px 0;
+  padding: 2px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: ${(props) => props.theme.textColors.secondary};
 `;
 const ProjectImage = styled.img`
+  border-radius: px;
   width: 100%;
 `;
 const ProjectDescription = styled.div`
-  height: 200px;
+  margin: 10px 15px 20px;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
 `;
 const ProjectTitle = styled.h2`
-  text-align: center;
+  text-align: start;
 `;
 const ProjectTools = styled.ul`
-  display: flex;
-  flex-direction: column;
-  margin: 20px 30px;
-`;
-const Tool = styled.li`
-  margin: 10px 0;
 `;
 function Portfolio() {
   return (
-    <PortfolioWrap>
-      <Project>
-        <ProjectLink href="https://memory-cards-zm.herokuapp.com">
-          <ProjectImage src={memoryGameImg} />
-        </ProjectLink>
+    <PortfolioWrap id="Portfolio">
+      <Project href="https://memory-cards-zm.herokuapp.com">
+        <ProjectImage src={memoryGameImg} />
         <ProjectDescription>
           <ProjectTitle>Memory Game</ProjectTitle>
-          <ProjectTools>
-            <Tool>React</Tool>
-            <Tool>React</Tool>
-            <Tool>React</Tool>
-          </ProjectTools>
+          <ProjectTools> React | NodeJS | Express</ProjectTools>
         </ProjectDescription>
       </Project>
-      <Project>
-        <ProjectLink href="https://memory-cards-zm.herokuapp.com">
-          <ProjectImage src={memoryGameImg} />
-        </ProjectLink>
+      <Project href="https://memory-cards-zm.herokuapp.com">
+        <ProjectImage src={memoryGameImg} />
         <ProjectDescription>
           <ProjectTitle>Memory Game</ProjectTitle>
-          <ProjectTools>
-            <Tool>React</Tool>
-            <Tool>React</Tool>
-            <Tool>React</Tool>
-          </ProjectTools>
+          <ProjectTools> React | NodeJS</ProjectTools>
+        </ProjectDescription>
+      </Project>
+      <Project href="https://memory-cards-zm.herokuapp.com">
+        <ProjectImage src={memoryGameImg} />
+        <ProjectDescription>
+          <ProjectTitle>Memory Game</ProjectTitle>
+          <ProjectTools> React | NodeJS | Express</ProjectTools>
+        </ProjectDescription>
+      </Project>
+      <Project href="https://memory-cards-zm.herokuapp.com">
+        <ProjectImage src={memoryGameImg} />
+        <ProjectDescription>
+          <ProjectTitle>Memory Game</ProjectTitle>
+          <ProjectTools> React | NodeJS | Express</ProjectTools>
         </ProjectDescription>
       </Project>
     </PortfolioWrap>
