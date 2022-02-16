@@ -7,7 +7,6 @@ interface MenuButton {
 
 export const HeaderWrap = styled.header`
   display: flex;
-  height: 60px;
   font-size:  1.2em;
   background-color: ${(props) => props.theme.mainColors.white};
   color: ${(props) => props.theme.textColors.secondary};
@@ -17,6 +16,10 @@ export const HeaderWrap = styled.header`
   width: 100%;
   justify-content: space-between;
   z-index: 1;
+  padding: 12px 20px;
+  @media (min-width: 1024px){
+    padding: 16px 20px;
+  }
 `;
 export const Navbar = styled.nav<MenuButton>`
   display: ${(props) => (props.isOpen ? 'flex' : 'none')};
@@ -31,6 +34,7 @@ export const Navbar = styled.nav<MenuButton>`
     flex-direction: column;
     align-items: flex-end;
     top: 99%;
+    right: 0%;
     width: 100%;
     background-color: ${(props) => props.theme.mainColors.white};
     padding: 5px 10px;
@@ -43,9 +47,18 @@ export const Logo = styled.div`
   justify-content: center;
   font-family: "Mistral";
   font-size: 1.5em;
+  @media (min-width: 767px){
+    font-size: 1.8em;
+  }
+  @media (min-width: 1024px){
+    font-size: 2em;
+  }
+  @media (min-width: 1400px){
+    font-size: 2.6em;
+  }
 `;
 export const MenuButton = styled.div`
-  margin-right: 10px;
+  font-size: 2em;
 `;
 export const StyledLink = styled(Link)`
   color: ${(props) => props.theme.textColors.secondary};
@@ -53,4 +66,15 @@ export const StyledLink = styled(Link)`
   width: 50%;
   text-align: right;
   cursor: pointer;
+  @media (min-width: 767px){
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 1024px){
+    font-size: 1.2em;
+  }
+  @media (min-width: 1400px){
+    font-size: 1.4em;
+  }
 `;

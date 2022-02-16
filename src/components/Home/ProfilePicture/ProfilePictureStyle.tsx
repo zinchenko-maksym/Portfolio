@@ -3,12 +3,13 @@ import styled from 'styled-components';
 export const ProfilePicture = styled.div`
   position: relative;
   display: flex;
+  margin-bottom: 30px;
   @media (min-width: 1024px) {
     width: 40vw;
     height: 40vw; 
     max-width: 670px;
     max-height: 670px;
-    margin-right: 10%;
+    margin-right: 8%;
   }
 `;
 export const Photo = styled.img`
@@ -52,17 +53,17 @@ export const SocialLink = styled.a`
   }
   &:nth-child(2) {
     left: 95%;
-    top: 71%;
+    top: 72%;
     transform: translate(-50%, -50%);
   }
   &:nth-child(3) {
     left: 82%;
-    top: 88%;
+    top: 90%;
     transform: translate(-50%, -50%);
   }
   &:nth-child(4) {
     left: 61%;
-    top: 97%;
+    top: 101%;
     transform: translate(-50%, -50%);
   }
   @media (min-width: 768px) {

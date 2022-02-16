@@ -10,7 +10,7 @@ export const HomeWrap = styled.section`
   background-color: ${(props) => props.theme.mainColors.primary};
   @media (min-width: 768px) {
     flex-flow: row-reverse nowrap;
-    padding: 80px 60px 40px;
+    padding: 90px 60px 40px;
     min-height: 450px;
     height: 50vw;
   }

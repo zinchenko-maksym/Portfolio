@@ -8,7 +8,6 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  const testRef = useRef(null);
 
   return (
     <Styled.HeaderWrap className="Header">
@@ -20,7 +19,7 @@ function Header() {
         <Styled.StyledLink to="Contact" spy smooth>Contact Me</Styled.StyledLink>
       </Styled.Navbar>
       <Styled.MenuButton onClick={toggleMenu}>
-        <HamburgerIcon />
+        <HamburgerIcon open={menuOpen} />
       </Styled.MenuButton>
     </Styled.HeaderWrap>
   );
