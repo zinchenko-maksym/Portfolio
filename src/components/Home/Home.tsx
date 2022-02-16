@@ -16,13 +16,13 @@ function Home() {
         <Styled.AboutMeText>
           Web Developer located in Chicago, IL.
         </Styled.AboutMeText>
+        <Styled.Resume href="https://docs.google.com/uc?export=download&id=1_SR1_un469Hdmwk6gcKbu3ExSnllUbAD">
+          <Styled.Circle><FaDownload /></Styled.Circle>
+          {' '}
+          <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
+          <Styled.ResumeBtnHover>Download</Styled.ResumeBtnHover>
+        </Styled.Resume>
       </Styled.AboutMe>
-      <Styled.Resume href="https://docs.google.com/uc?export=download&id=1_SR1_un469Hdmwk6gcKbu3ExSnllUbAD">
-        <Styled.Circle><FaDownload /></Styled.Circle>
-        {' '}
-        <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
-        <Styled.ResumeBtnHover>Download</Styled.ResumeBtnHover>
-      </Styled.Resume>
     </Styled.HomeWrap>
   );
 }

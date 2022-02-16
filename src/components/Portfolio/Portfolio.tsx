@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import memoryGameImg from '../../assets/memory-game.png';
+import countriesImg from '../../assets/Countries.png';
 
 const PortfolioWrap = styled.section`
   display: flex;
@@ -8,6 +9,9 @@ const PortfolioWrap = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.mainColors.secondary};
   padding: 40px 0;
+  @media (min-width: 1024px) {
+    justify-content: space-around;
+  }
 `;
 const Project = styled.a`
   width: 80%;
@@ -16,6 +20,9 @@ const Project = styled.a`
   border-radius: 4px;
   text-decoration: none;
   color: ${(props) => props.theme.textColors.secondary};
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
 `;
 const ProjectImage = styled.img`
   border-radius: px;
@@ -56,11 +63,11 @@ function Portfolio() {
           <ProjectTools> React | NodeJS | Express</ProjectTools>
         </ProjectDescription>
       </Project>
-      <Project href="https://memory-cards-zm.herokuapp.com">
-        <ProjectImage src={memoryGameImg} />
+      <Project href="https://frontendmentorcountries.herokuapp.com/main">
+        <ProjectImage src={countriesImg} />
         <ProjectDescription>
-          <ProjectTitle>Memory Game</ProjectTitle>
-          <ProjectTools> React | NodeJS | Express</ProjectTools>
+          <ProjectTitle>Countries App</ProjectTitle>
+          <ProjectTools> React | TypesScript | Redux | Rest Api</ProjectTools>
         </ProjectDescription>
       </Project>
     </PortfolioWrap>

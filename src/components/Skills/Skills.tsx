@@ -7,8 +7,25 @@ const SkillsWrap = styled.section`
   font-size:  1.2em;
   font-weight: 600;
   flex-flow: column wrap;
-  padding: 60px 10px;
+  padding: 30px 10px 70px;
   background-color: ${(props) => props.theme.mainColors.primary};
+  @media (min-width: 768px) {
+  align-items: center;
+  }
+  @media (min-width: 1024px) {
+    padding-bottom: 110px;
+  }
+`;
+const SkillsTitle = styled.h1`
+  color: ${(props) => props.theme.textColors.primary};
+  margin: 20px 10%;
+  @media (min-width: 768px) {
+  font-size: 2em;
+  }
+  @media (min-width: 1024px) {
+  font-size: 2.6em;
+  }
+
 `;
 
 function Skills() {
@@ -51,6 +68,7 @@ function Skills() {
   );
   return (
     <SkillsWrap id="Skills">
+      <SkillsTitle>Coding Skills</SkillsTitle>
       {displaySkills}
     </SkillsWrap>
   );

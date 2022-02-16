@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import myPhoto from '../../assets/MyPhoto.jpg';
 
 export const HomeWrap = styled.section`
   display: flex;
@@ -8,35 +6,58 @@ export const HomeWrap = styled.section`
   font-weight: 600;
   flex-flow: column wrap;
   align-items: center;
-  padding-top: 60px;
+  padding: 60px 24px 0;
   background-color: ${(props) => props.theme.mainColors.primary};
-`;
-export const Photo = styled.img`
-  margin-top: 20px;
-  width: 240px;
-  height: 240px;
-  background-image: url(${myPhoto});
-  background-size: 100%;
-  border-radius: 120px;
+  @media (min-width: 768px) {
+    flex-flow: row-reverse nowrap;
+    padding: 80px 60px 40px;
+    min-height: 450px;
+    height: 50vw;
+  }
+  @media (min-width: 1024px) {
+    height: 49vw;
+    padding-left: 10vw;
+  }
 `;
 export const AboutMeHeader = styled.h1`
   font-size: 1.7em;
-  margin: 0.3em 0;
   text-align: left;
   line-height: 1.4em;
-  margin: 20px auto 6px;
+  @media (min-width: 1024px) {
+    font-size: 2.4em;
+  }
+  @media (min-width: 1400px) {
+    font-size: 3.6em;
+  }
 `;
 export const MyName = styled.span`
   font-size: 1.4em;
   font-weight: 600;
 `;
 export const AboutMe = styled.div`
-padding: 0 1em;
+  margin: 20px 0;
   color: ${(props) => props.theme.textColors.primary};
+  align-self: flex-start;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    min-height: 100%;
+    justify-content: center;
+  }
 `;
 export const AboutMeText = styled.p`
   margin: 10px 0;
   color: ${(props) => props.theme.mainColors.secondary};
+  @media (min-width: 768px) {
+    margin: 30px 0;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.4em;
+  }
+  @media (min-width: 1400px) {
+    font-size: 2em;
+  }
 `;
 
 export const ResumeBtnText = styled.span`
@@ -67,7 +88,7 @@ export const Resume = styled.a`
   justify-content: space-around;
   align-items: center;
   align-self: flex-start;
-  margin: 10px 16px 40px;
+  margin: 10px 0 40px;
   width: 190px;
   height: 50px;
   border-radius: 18px;
@@ -90,5 +111,9 @@ export const Resume = styled.a`
       left: 75%;
     }
   }
-
+  @media (min-width: 1400px) {
+    width: 260px;
+    height: 70px;
+    font-size: 1.3em;
+  }
 `;

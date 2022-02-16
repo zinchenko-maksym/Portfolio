@@ -12,7 +12,7 @@ const FooterWrap = styled.footer`
 const SocialLink = styled.a`
   display: flex;
   color: ${(props) => props.theme.mainColors.white};
-  margin: 5px 10px;
+  margin: 10px 16px;
   font-size: 1.8rem;
   text-align: center;
 `;

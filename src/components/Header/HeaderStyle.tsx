@@ -52,4 +52,5 @@ export const StyledLink = styled(Link)`
   padding: 8px;
   width: 50%;
   text-align: right;
+  cursor: pointer;
 `;
