@@ -37,12 +37,17 @@ function Skills() {
     },
     {
       name: 'CSS',
-      subSkills: [],
+      subSkills: [{ name: 'CSS3', mastery: 90 }, { name: 'Sass', mastery: 90 }, { name: 'Styled Components', mastery: 90 }],
+      mastery: 90,
+    },
+    {
+      name: 'JavaScript',
+      subSkills: [{ name: 'ES6+', mastery: 90 }, { name: 'TypeScript', mastery: 70 }, { name: 'Rest APIs', mastery: 90 }],
       mastery: 90,
     },
     {
       name: 'ReactJS',
-      subSkills: [{ name: 'Redux', mastery: 100 }, { name: 'Styled Components', mastery: 90 }],
+      subSkills: [{ name: 'Hooks', mastery: 90 }, { name: 'Redux', mastery: 100 }, { name: 'Styled Components', mastery: 90 }, { name: 'Redux-saga', mastery: 80 }],
       mastery: 90,
     },
     {
@@ -52,8 +57,8 @@ function Skills() {
     },
     {
       name: 'Databases',
-      subSkills: [],
-      mastery: 90,
+      subSkills: [{ name: 'MySQL', mastery: 80 }, { name: 'MongoDB', mastery: 50 }],
+      mastery: 70,
     },
   ];
   const displaySkills = skills.map(

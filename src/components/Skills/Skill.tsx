@@ -46,6 +46,7 @@ const SkillMastery = styled.div`
   margin-right: 10px;
   font-size: 0.8em;
   position: relative;
+  width: 100%;
   @media (min-width: 768px) {
     font-size: 1em;
   }
