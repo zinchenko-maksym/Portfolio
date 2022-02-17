@@ -27,7 +27,7 @@ export const AboutMeHeader = styled.h1`
     font-size: 2.4em;
   }
   @media (min-width: 1400px) {
-    font-size: 3.6em;
+    font-size: 3.2em;
   }
 `;
 export const MyName = styled.span`
@@ -56,7 +56,7 @@ export const AboutMeText = styled.p`
     font-size: 1.4em;
   }
   @media (min-width: 1400px) {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 `;
 

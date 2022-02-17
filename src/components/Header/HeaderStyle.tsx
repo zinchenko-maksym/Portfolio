@@ -18,7 +18,7 @@ export const HeaderWrap = styled.header`
   z-index: 1;
   padding: 12px 20px;
   @media (min-width: 1024px){
-    padding: 16px 20px;
+    padding: 10px 20px;
   }
 `;
 export const Navbar = styled.nav<MenuButton>`
@@ -54,7 +54,7 @@ export const Logo = styled.div`
     font-size: 2em;
   }
   @media (min-width: 1400px){
-    font-size: 2.6em;
+    font-size: 2.1em;
   }
 `;
 export const MenuButton = styled.div`
@@ -72,9 +72,6 @@ export const StyledLink = styled(Link)`
     justify-content: center;
   }
   @media (min-width: 1024px){
-    font-size: 1.2em;
-  }
-  @media (min-width: 1400px){
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
 `;

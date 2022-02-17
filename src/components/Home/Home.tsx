@@ -2,6 +2,7 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import * as Styled from './HomeStyle';
 import ProfilePicture from './ProfilePicture/ProfilePicture';
+import ResumeFile from '../../assets/Resume.docx';
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
         <Styled.AboutMeText>
           Web Developer located in Chicago, IL.
         </Styled.AboutMeText>
-        <Styled.Resume href="https://docs.google.com/uc?export=download&id=1_SR1_un469Hdmwk6gcKbu3ExSnllUbAD">
+        <Styled.Resume href={ResumeFile} download>
           <Styled.Circle><FaDownload /></Styled.Circle>
           {' '}
           <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>

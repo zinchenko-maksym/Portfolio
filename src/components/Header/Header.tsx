@@ -16,7 +16,7 @@ function Header() {
         <Styled.StyledLink to="About" spy smooth>About Me</Styled.StyledLink>
         <Styled.StyledLink to="Portfolio" spy smooth>Portfolio</Styled.StyledLink>
         <Styled.StyledLink to="Skills" spy smooth>Skills</Styled.StyledLink>
-        <Styled.StyledLink to="Contact" spy smooth>Contact Me</Styled.StyledLink>
+        <Styled.StyledLink to="Contact" spy smooth>Contact</Styled.StyledLink>
       </Styled.Navbar>
       <Styled.MenuButton onClick={toggleMenu}>
         <HamburgerIcon open={menuOpen} />
