@@ -114,6 +114,6 @@ export const Resume = styled.a`
   @media (min-width: 1400px) {
     width: 260px;
     height: 70px;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 `;

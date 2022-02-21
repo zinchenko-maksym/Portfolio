@@ -82,6 +82,7 @@ const OpenSubskillsBtn = styled.div<SubSkillProps>`
   transition: transform 0.1s;
   position: absolute;
   right: -20px;
+  user-select: none;
   @media (min-width: 768px) {
     right: -30px;
   }

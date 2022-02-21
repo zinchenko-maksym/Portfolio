@@ -49,20 +49,6 @@ function Portfolio() {
           <ProjectTools> React | NodeJS | Express</ProjectTools>
         </ProjectDescription>
       </Project>
-      <Project href="https://memory-cards-zm.herokuapp.com">
-        <ProjectImage src={memoryGameImg} />
-        <ProjectDescription>
-          <ProjectTitle>Memory Game</ProjectTitle>
-          <ProjectTools> React | NodeJS</ProjectTools>
-        </ProjectDescription>
-      </Project>
-      <Project href="https://memory-cards-zm.herokuapp.com">
-        <ProjectImage src={memoryGameImg} />
-        <ProjectDescription>
-          <ProjectTitle>Memory Game</ProjectTitle>
-          <ProjectTools> React | NodeJS | Express</ProjectTools>
-        </ProjectDescription>
-      </Project>
       <Project href="https://frontendmentorcountries.herokuapp.com/main">
         <ProjectImage src={countriesImg} />
         <ProjectDescription>

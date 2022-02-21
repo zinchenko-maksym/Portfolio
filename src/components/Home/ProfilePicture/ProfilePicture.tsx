@@ -4,24 +4,25 @@ import {
 } from 'react-icons/fa';
 import * as Styled from './ProfilePictureStyle';
 import myPhoto from '../../../assets/MyPhoto.jpg';
+import SocialLink from '../../SocialLink/SocialLink';
 
 function ProfilePicture() {
   return (
     <Styled.ProfilePicture>
       <Styled.Photo src={myPhoto} />
       <Styled.Socials>
-        <Styled.SocialLink href="https://t.me/Maksym_Zinchenko">
+        <SocialLink adress="https://t.me/Maksym_Zinchenko">
           <FaTelegramPlane />
-        </Styled.SocialLink>
-        <Styled.SocialLink href="https://www.facebook.com/maksym.zinchenko.54">
+        </SocialLink>
+        <SocialLink adress="https://www.facebook.com/maksym.zinchenko.54">
           <FaFacebookF />
-        </Styled.SocialLink>
-        <Styled.SocialLink href="https://github.com/maklaut007">
+        </SocialLink>
+        <SocialLink adress="https://github.com/maklaut007">
           <FaGithubSquare />
-        </Styled.SocialLink>
-        <Styled.SocialLink href="https://www.linkedin.com/in/maksym-zinchenko-818390175/">
+        </SocialLink>
+        <SocialLink adress="https://github.com/maklaut007">
           <FaLinkedinIn />
-        </Styled.SocialLink>
+        </SocialLink>
       </Styled.Socials>
     </Styled.ProfilePicture>
   );

@@ -1,5 +1,4 @@
-import React, { useState, useRef } from 'react';
-import { Link } from 'react-scroll';
+import React, { useState } from 'react';
 import HamburgerIcon from './HamburgerIcon/HamburgerIcon';
 import * as Styled from './HeaderStyle';
 

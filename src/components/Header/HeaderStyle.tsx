@@ -18,7 +18,7 @@ export const HeaderWrap = styled.header`
   z-index: 1;
   padding: 12px 20px;
   @media (min-width: 1024px){
-    padding: 10px 20px;
+    padding: 6px 20px;
   }
 `;
 export const Navbar = styled.nav<MenuButton>`
@@ -72,6 +72,6 @@ export const StyledLink = styled(Link)`
     justify-content: center;
   }
   @media (min-width: 1024px){
-    font-size: 1.1em;
+    font-size: 1em;
   }
 `;
