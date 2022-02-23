@@ -15,6 +15,9 @@ const SocialLink = styled.a`
   margin: 10px 16px;
   font-size: 1.8rem;
   text-align: center;
+  @media (min-width: 768px) {
+    margin: 12px 3%;
+  }
 `;
 function Footer() {
   return (

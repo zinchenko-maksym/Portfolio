@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from '../Header/Header';
 import Portfolio from '../Portfolio/Portfolio';
-import Home from '../Home/Home';
+import AboutMe from '../Home/AboutMe';
 import ContactPage from '../ContactPage/ContactPage';
 import Footer from '../Footer/Footer';
 import theme from './theme';
@@ -36,7 +36,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <Home />
+      <AboutMe />
       <Portfolio />
       <Skills />
       <ContactPage />

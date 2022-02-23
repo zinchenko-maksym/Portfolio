@@ -21,12 +21,40 @@ export const HeaderWrap = styled.header`
     padding: 6px 20px;
   }
 `;
+export const Logo = styled.div`
+  display: flex;
+  width: 120px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mistral";
+  font-size: 1.5em;
+  cursor: pointer;
+  @media (min-width: 768px){
+    margin-left: 50px;
+    font-size: 1.8em;
+  }
+  @media (min-width: 1024px){
+    font-size: 2em;
+  }
+  @media (min-width: 1400px){
+    margin-left: 80px;
+    font-size: 2.1em;
+  }
+`;
 export const Navbar = styled.nav<MenuButton>`
   display: ${(props) => (props.isOpen ? 'flex' : 'none')};
   width: 70%;
-  justify-content: space-around;
-  @media (min-width: 767px){
+  @media (min-width: 768px){
+    
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 20px 0 auto;
+  }
+  @media (min-width: 1024px){
+    margin: 0 10% 0 auto;
   }
   @media (max-width: 767px){
     height: ${(props) => (props.isOpen ? 'flex' : 'none')};
@@ -40,36 +68,23 @@ export const Navbar = styled.nav<MenuButton>`
     padding: 5px 10px;
   }
 `;
-export const Logo = styled.div`
-  display: flex;
-  width: 30%;
-  align-items: center;
-  justify-content: center;
-  font-family: "Mistral";
-  font-size: 1.5em;
-  @media (min-width: 767px){
-    font-size: 1.8em;
-  }
-  @media (min-width: 1024px){
-    font-size: 2em;
-  }
-  @media (min-width: 1400px){
-    font-size: 2.1em;
-  }
-`;
+
 export const MenuButton = styled.div`
   font-size: 2em;
 `;
 export const StyledLink = styled(Link)`
   color: ${(props) => props.theme.textColors.secondary};
   padding: 8px;
-  width: 50%;
   text-align: right;
   cursor: pointer;
-  @media (min-width: 767px){
-    width: 25%;
+
+  @media (min-width: 768px){
     display: flex;
     justify-content: center;
+    transition: color 0.2s;
+    &:hover{
+    color: ${(props) => props.theme.mainColors.primary};
+    }
   }
   @media (min-width: 1024px){
     font-size: 1em;

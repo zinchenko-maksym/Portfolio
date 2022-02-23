@@ -9,6 +9,7 @@ const PortfolioWrap = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.mainColors.secondary};
   padding: 40px 0;
+  font-size:  1.2em;
   @media (min-width: 1024px) {
     justify-content: space-around;
   }
@@ -39,9 +40,26 @@ const ProjectTitle = styled.h2`
 `;
 const ProjectTools = styled.ul`
 `;
+const PortfolioTitle = styled.h1`
+  color: ${(props) => props.theme.textColors.secondary};
+  padding: 30px 10%;
+  width: 100%;
+  @media (min-width: 768px) {
+    text-align: center;
+    padding: 30px 0 70px;
+  }
+  @media (min-width: 768px) {
+  font-size: 2em;
+  }
+  @media (min-width: 1024px) {
+  font-size: 2.6em;
+  }
+
+`;
 function Portfolio() {
   return (
     <PortfolioWrap id="Portfolio">
+      <PortfolioTitle>Portfolio projects</PortfolioTitle>
       <Project href="https://memory-cards-zm.herokuapp.com">
         <ProjectImage src={memoryGameImg} />
         <ProjectDescription>

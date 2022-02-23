@@ -1,14 +1,14 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
-import * as Styled from './HomeStyle';
+import * as Styled from './AboutMeStyle';
 import ProfilePicture from './ProfilePicture/ProfilePicture';
 import ResumeFile from '../../assets/Resume.docx';
 
-function Home() {
+function AboutMe() {
   return (
-    <Styled.HomeWrap id="About">
+    <Styled.AboutMeWrap id="About">
       <ProfilePicture />
-      <Styled.AboutMe>
+      <Styled.Info>
         <Styled.AboutMeHeader>
           Hello! I&apos;m
           <br />
@@ -23,9 +23,9 @@ function Home() {
           <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
           <Styled.ResumeBtnHover>Download</Styled.ResumeBtnHover>
         </Styled.Resume>
-      </Styled.AboutMe>
-    </Styled.HomeWrap>
+      </Styled.Info>
+    </Styled.AboutMeWrap>
   );
 }
 
-export default Home;
+export default AboutMe;

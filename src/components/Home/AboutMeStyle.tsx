@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HomeWrap = styled.section`
+export const AboutMeWrap = styled.section`
   display: flex;
   font-size:  1.2em;
   font-weight: 600;
@@ -34,7 +34,7 @@ export const MyName = styled.span`
   font-size: 1.4em;
   font-weight: 600;
 `;
-export const AboutMe = styled.div`
+export const Info = styled.div`
   margin: 20px 0;
   color: ${(props) => props.theme.textColors.primary};
   align-self: flex-start;

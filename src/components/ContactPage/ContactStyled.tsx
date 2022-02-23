@@ -61,13 +61,19 @@ export const SubmitButton = styled.button`
   width: 100%;
   max-width: 200px;
   background-color: ${(props) => props.theme.mainColors.tertiary};
-  color: ${(props) => props.theme.textColors.primary};;
+  color: ${(props) => props.theme.textColors.primary};
   margin: 16px 0;
   padding: 12px 10px;
   align-self: flex-start;
   border-radius: 2px;
   font-size: 1em;
   cursor: pointer;
+  &:hover {
+    transform: scale(0.97, 0.97);
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    box-shadow: inset 0px -1px 10px rgba(0,0,0,0.2);
+    }
   @media (min-width: 768px) {
     font-size: 1.2em;
   }

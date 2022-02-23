@@ -33,27 +33,27 @@ function Skills() {
     {
       name: 'HTML5',
       subSkills: [],
-      mastery: 100,
+      mastery: 90,
     },
     {
       name: 'CSS',
-      subSkills: [{ name: 'CSS3', mastery: 90 }, { name: 'Sass', mastery: 90 }, { name: 'Styled Components', mastery: 90 }],
-      mastery: 90,
+      subSkills: [{ name: 'CSS3', mastery: 80 }, { name: 'Sass', mastery: 70 }, { name: 'Styled Components', mastery: 80 }],
+      mastery: 80,
     },
     {
       name: 'JavaScript',
       subSkills: [{ name: 'ES6+', mastery: 90 }, { name: 'TypeScript', mastery: 70 }, { name: 'Rest APIs', mastery: 90 }],
-      mastery: 90,
+      mastery: 80,
     },
     {
       name: 'ReactJS',
-      subSkills: [{ name: 'Hooks', mastery: 90 }, { name: 'Redux', mastery: 100 }, { name: 'Styled Components', mastery: 90 }, { name: 'Redux-saga', mastery: 80 }],
-      mastery: 90,
+      subSkills: [{ name: 'Hooks', mastery: 80 }, { name: 'Redux', mastery: 90 }, { name: 'Styled Components', mastery: 80 }, { name: 'Redux-saga', mastery: 70 }],
+      mastery: 80,
     },
     {
       name: 'Node.js',
       subSkills: [],
-      mastery: 90,
+      mastery: 60,
     },
     {
       name: 'Databases',
