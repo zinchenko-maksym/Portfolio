@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import memoryGameImg from '../../assets/memory-game.png';
 import countriesImg from '../../assets/Countries.png';
+import rockImg from '../../assets/rock-paper-scissors.png';
 
 const PortfolioWrap = styled.section`
   display: flex;
@@ -60,11 +61,11 @@ function Portfolio() {
   return (
     <PortfolioWrap id="Portfolio">
       <PortfolioTitle>Portfolio projects</PortfolioTitle>
-      <Project href="https://memory-cards-zm.herokuapp.com">
-        <ProjectImage src={memoryGameImg} />
+      <Project href="https://master.d3sbyiqrv7e0om.amplifyapp.com">
+        <ProjectImage src={rockImg} />
         <ProjectDescription>
-          <ProjectTitle>Memory Game</ProjectTitle>
-          <ProjectTools> React | NodeJS | Express</ProjectTools>
+          <ProjectTitle>Rock Paper Scissors Game</ProjectTitle>
+          <ProjectTools> React | Redux | Styled Components</ProjectTools>
         </ProjectDescription>
       </Project>
       <Project href="https://frontendmentorcountries.herokuapp.com/main">
@@ -72,6 +73,13 @@ function Portfolio() {
         <ProjectDescription>
           <ProjectTitle>Countries App</ProjectTitle>
           <ProjectTools> React | TypesScript | Redux | Rest Api</ProjectTools>
+        </ProjectDescription>
+      </Project>
+      <Project href="https://memory-cards-zm.herokuapp.com">
+        <ProjectImage src={memoryGameImg} />
+        <ProjectDescription>
+          <ProjectTitle>Memory Game</ProjectTitle>
+          <ProjectTools> React | NodeJS | Express</ProjectTools>
         </ProjectDescription>
       </Project>
     </PortfolioWrap>
