@@ -31,13 +31,8 @@ const SkillsTitle = styled.h1`
 function Skills() {
   const skills = [
     {
-      name: 'HTML5',
-      subSkills: [],
-      mastery: 90,
-    },
-    {
-      name: 'CSS',
-      subSkills: [{ name: 'CSS3', mastery: 80 }, { name: 'Sass', mastery: 70 }, { name: 'Styled Components', mastery: 80 }],
+      name: 'HTML & CSS',
+      subSkills: [{ name: 'Sass', mastery: 70 }, { name: 'Styled Components', mastery: 80 }],
       mastery: 80,
     },
     {
