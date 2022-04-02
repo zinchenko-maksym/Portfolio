@@ -16,30 +16,36 @@ export const HeaderWrap = styled.header`
   width: 100%;
   justify-content: space-between;
   z-index: 1;
-  padding: 12px 20px;
+  padding: 8px 20px;
   @media (min-width: 1024px){
-    padding: 6px 20px;
+    padding: 4px 20px;
   }
 `;
 export const Logo = styled.div`
   display: flex;
-  width: 120px;
   margin-left: 10px;
   align-items: center;
   justify-content: center;
   font-family: "Mistral";
-  font-size: 1.5em;
+  font-size: 1.8em;
   cursor: pointer;
+  background-color: #f3ec78;
+  background-image: linear-gradient(5deg, #ffd700 50%, #0057b7 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
   @media (min-width: 768px){
     margin-left: 50px;
-    font-size: 1.8em;
+    font-size: 2em;
   }
   @media (min-width: 1024px){
-    font-size: 2em;
+    font-size: 2.2em;
   }
   @media (min-width: 1400px){
     margin-left: 80px;
-    font-size: 2.1em;
+    font-size: 2.5em;
   }
 `;
 export const Navbar = styled.nav<MenuButton>`

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import memoryGameImg from '../../assets/memory-game.png';
 import countriesImg from '../../assets/Countries.png';
 import rockImg from '../../assets/rock-paper-scissors.png';
+import entertainImg from '../../assets/Entertainment.png';
 
 const PortfolioWrap = styled.section`
   display: flex;
@@ -80,6 +81,13 @@ function Portfolio() {
         <ProjectDescription>
           <ProjectTitle>Memory Game</ProjectTitle>
           <ProjectTools> React | NodeJS | Express</ProjectTools>
+        </ProjectDescription>
+      </Project>
+      <Project href="https://master.doged4qnm8399.amplifyapp.com">
+        <ProjectImage src={entertainImg} />
+        <ProjectDescription>
+          <ProjectTitle>Entertainment App</ProjectTitle>
+          <ProjectTools> React | Redux | NodeJS | Express</ProjectTools>
         </ProjectDescription>
       </Project>
     </PortfolioWrap>
