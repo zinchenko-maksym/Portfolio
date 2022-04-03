@@ -49,6 +49,7 @@ export const Info = styled.div`
 export const AboutMeText = styled.p`
   margin: 10px 0;
   color: ${(props) => props.theme.mainColors.secondary};
+  font-family: 'Outfit', sans-serif;
   @media (min-width: 768px) {
     margin: 30px 0;
   }
