@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as Styled from './SkillStyle';
+import MasteryScale from './MasteryScale/MasteryScale';
 
 interface SubSkill {
   name: string;
@@ -24,7 +25,7 @@ function Skill({ skillName, mastery, subSkills }: SkillProps) {
           {subSkill.mastery}
           %
         </Styled.SkillMastery>
-        <Styled.SkillMasteryScale percent={subSkill.mastery} />
+        <MasteryScale mastery={subSkill.mastery} />
       </Styled.SubSkill>
     ),
   );
@@ -44,7 +45,7 @@ function Skill({ skillName, mastery, subSkills }: SkillProps) {
           &#9658;
         </Styled.OpenSubskillsBtn>
       </Styled.SkillMastery>
-      <Styled.SkillMasteryScale percent={mastery} />
+      <MasteryScale mastery={mastery} />
       {mapSubSkills}
     </Styled.SkillWrap>
   );
