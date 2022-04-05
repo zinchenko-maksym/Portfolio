@@ -45,7 +45,7 @@ export const TextImput = styled.input`
 `;
 export const TextAreaImput = styled.textarea`
   width: 100%;
-  height: 80px;
+  min-height: 80px;
   margin: 10px 0;
   padding: 8px 10px;
   background-color: inherit;

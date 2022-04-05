@@ -10,7 +10,10 @@ export const ProfilePicture = styled.div`
     height: 40vw; 
     max-width: 670px;
     max-height: 670px;
-    margin-right: 8%;
+    margin-right: auto;
+    @media (min-width: 1440px) {
+      margin-right: 5vw;
+    }
   }
 
 `;

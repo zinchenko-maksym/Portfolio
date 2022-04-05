@@ -15,6 +15,11 @@ const SkillsWrap = styled.section`
   @media (min-width: 1024px) {
     padding-bottom: 110px;
   }
+  @media (min-width: 1440px) {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 `;
 const SkillsTitle = styled.h1`
   color: ${(props) => props.theme.textColors.primary};
@@ -24,6 +29,11 @@ const SkillsTitle = styled.h1`
   }
   @media (min-width: 1024px) {
   font-size: 2.6em;
+  }
+  @media (min-width: 1440px) {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 60px;
   }
 
 `;
@@ -46,14 +56,9 @@ function Skills() {
       mastery: 80,
     },
     {
-      name: 'Node.js',
-      subSkills: [],
+      name: 'Backend',
+      subSkills: [{ name: 'Node.js', mastery: 70 }, { name: 'PostgreSQL', mastery: 50 }],
       mastery: 60,
-    },
-    {
-      name: 'Databases',
-      subSkills: [{ name: 'MySQL', mastery: 80 }, { name: 'MongoDB', mastery: 50 }],
-      mastery: 70,
     },
   ];
   const displaySkills = skills.map(

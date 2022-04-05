@@ -11,12 +11,11 @@ export const AboutMeWrap = styled.section`
   @media (min-width: 768px) {
     flex-flow: row-reverse nowrap;
     padding: 90px 60px 40px;
-    min-height: 450px;
-    height: 50vw;
+    min-height: 600px;
   }
   @media (min-width: 1024px) {
-    height: 49vw;
     padding-left: 10vw;
+    min-height: 100vh;
   }
 `;
 export const AboutMeHeader = styled.h1`
@@ -42,7 +41,7 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: 768px) {
-    min-height: 100%;
+    margin: auto 0;
     justify-content: center;
   }
 `;

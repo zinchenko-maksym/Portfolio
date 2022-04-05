@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <Styled.PortfolioWrap id="Portfolio">
       <Styled.PortfolioTitle>Portfolio projects</Styled.PortfolioTitle>
-      <Styled.Project href="https://master.d3sbyiqrv7e0om.amplifyapp.com">
+      <Styled.Project target="_blank" href="https://master.d3sbyiqrv7e0om.amplifyapp.com">
         <Styled.ProjectImageWrap>
           <Styled.ProjectImage src={rockImg} />
           <Styled.ProjectImageHover>
@@ -21,7 +21,20 @@ function Portfolio() {
           <Styled.ProjectTools> React | Redux | Styled Components</Styled.ProjectTools>
         </Styled.ProjectDescription>
       </Styled.Project>
-      <Styled.Project href="https://frontendmentorcountries.herokuapp.com/main">
+      <Styled.Project target="_blank" href="https://master.doged4qnm8399.amplifyapp.com">
+        <Styled.ProjectImageWrap>
+          <Styled.ProjectImage src={entertainImg} />
+          <Styled.ProjectImageHover>
+            <Styled.OpenPage>Open Project</Styled.OpenPage>
+          </Styled.ProjectImageHover>
+        </Styled.ProjectImageWrap>
+
+        <Styled.ProjectDescription>
+          <Styled.ProjectTitle>Entertainment App</Styled.ProjectTitle>
+          <Styled.ProjectTools> React | Redux | NodeJS | Express</Styled.ProjectTools>
+        </Styled.ProjectDescription>
+      </Styled.Project>
+      <Styled.Project target="_blank" href="https://frontendmentorcountries.herokuapp.com/main">
         <Styled.ProjectImageWrap>
           <Styled.ProjectImage src={countriesImg} />
           <Styled.ProjectImageHover>
@@ -33,7 +46,7 @@ function Portfolio() {
           <Styled.ProjectTools> React | TypesScript | Redux | Rest Api</Styled.ProjectTools>
         </Styled.ProjectDescription>
       </Styled.Project>
-      <Styled.Project href="https://memory-cards-zm.herokuapp.com">
+      <Styled.Project target="_blank" href="https://memory-cards-zm.herokuapp.com">
         <Styled.ProjectImageWrap>
           <Styled.ProjectImage src={memoryGameImg} />
           <Styled.ProjectImageHover>
@@ -43,19 +56,6 @@ function Portfolio() {
         <Styled.ProjectDescription>
           <Styled.ProjectTitle>Memory Game</Styled.ProjectTitle>
           <Styled.ProjectTools> React | NodeJS | Express</Styled.ProjectTools>
-        </Styled.ProjectDescription>
-      </Styled.Project>
-      <Styled.Project href="https://master.doged4qnm8399.amplifyapp.com">
-        <Styled.ProjectImageWrap>
-          <Styled.ProjectImage src={entertainImg} />
-          <Styled.ProjectImageHover>
-            <Styled.OpenPage>Open Project</Styled.OpenPage>
-          </Styled.ProjectImageHover>
-        </Styled.ProjectImageWrap>
-
-        <Styled.ProjectDescription>
-          <Styled.ProjectTitle>Entertainment App</Styled.ProjectTitle>
-          <Styled.ProjectTools> React | Redux | NodeJS | Express</Styled.ProjectTools>
         </Styled.ProjectDescription>
       </Styled.Project>
     </Styled.PortfolioWrap>

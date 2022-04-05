@@ -37,6 +37,7 @@ export const ProjectImage = styled.img`
 `;
 
 export const ProjectImageHover = styled.div`
+  display: none;
   @media (min-width: 1024px) {
     position: absolute;
     width: 100%;
@@ -76,18 +77,23 @@ export const OpenPage = styled.div`
 `;
 
 export const ProjectDescription = styled.div`
-  margin: 10px 15px 20px;
+  margin: 10px 0;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
+  @media (min-width: 768px) {
+    margin: 20px 0;
+  }
 `;
 export const ProjectTitle = styled.h2`
   text-align: start;
+  font-family: 'Outfit', sans-serif;
 `;
 export const ProjectTools = styled.ul`
 `;
 export const PortfolioTitle = styled.h1`
   color: ${(props) => props.theme.textColors.secondary};
+  letter-spacing: 1px;
   padding: 30px 10%;
   width: 100%;
   @media (min-width: 768px) {
@@ -98,6 +104,6 @@ export const PortfolioTitle = styled.h1`
   font-size: 2em;
   }
   @media (min-width: 1024px) {
-  font-size: 2.6em;
+  font-size: 3em;
   }
 `;
