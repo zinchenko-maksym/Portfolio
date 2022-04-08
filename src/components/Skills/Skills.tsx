@@ -19,6 +19,7 @@ const SkillsWrap = styled.section`
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
+    padding: 50px 2%;
   }
 `;
 const SkillsTitle = styled.h1`
@@ -33,7 +34,7 @@ const SkillsTitle = styled.h1`
   @media (min-width: 1440px) {
     width: 100%;
     text-align: center;
-    margin: 50px 0 60px;
+    margin-bottom: 60px;
   }
 
 `;

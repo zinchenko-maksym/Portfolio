@@ -18,12 +18,11 @@ export const SkillWrap = styled.div`
   @media (min-width: 768px) {
     width: 80%;
     max-width: 760px;
-    margin: 16px;
+
   }
   @media (min-width: 1440px) {
-    width: 21vw;
+    width: 18vw;
     max-width: 760px;
-    margin: 16px;
   }
 `;
 export const SkillName = styled.p`
@@ -43,7 +42,7 @@ export const SkillMastery = styled.div<ScaleProps>`
   margin-right: 10px;
   font-size: 0.8em;
   position: relative;
-  width: 100%;
+  margin-right: calc(100% - ${(props) => (props.percent)}%);
   @media (min-width: 768px) {
     font-size: 1em;
   }
@@ -52,8 +51,6 @@ export const SkillMastery = styled.div<ScaleProps>`
   }
   @media (min-width: 1440px) {
     font-size: 1em;
-    width: auto;
-    margin-right: calc(100% - ${(props) => (props.percent)}%);
     align-items: flex-end;
   }
 `;

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 interface ScaleProps {
   percent: number;
@@ -26,6 +26,7 @@ export const SkillMasteryFill = styled.div<ScaleProps>`
   border-radius: 10px;
   width: ${(props) => (props.percent)}%;
   background-color: ${(props) => props.theme.mainColors.secondary};
+  transition: width 0.8s ease-out;
 `;
 
 export const OpenSubskillsBtn = styled.div`
