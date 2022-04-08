@@ -1,13 +1,13 @@
 /* eslint-disable react/require-default-props */
 import React, { useEffect, useState } from 'react';
-import * as Styled from './style';
+import * as Styled from './Style';
 
 interface SkillProps {
   mastery: number,
   fillScale?: boolean ;
 }
 
-function MasteryScale({ mastery, fillScale = false }: SkillProps) {
+function MasteryScale({ mastery, fillScale = true }: SkillProps) {
   const [percent, setPersent] = useState(0);
   useEffect(() => {
     if (fillScale === true) {
