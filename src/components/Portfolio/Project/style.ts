@@ -1,16 +1,11 @@
 import styled from 'styled-components';
 
 export const Project = styled.a`
-  width: 80%;
-  margin: 20px 0;
-  padding: 2px;
+  width: 100%;
   border-radius: 4px;
   text-decoration: none;
   color: ${(props) => props.theme.textColors.secondary};
-  border-radius: 20px;
-  @media (min-width: 1024px) {
-    width: 40%;
-  }
+
 `;
 export const ProjectImageWrap = styled.section`
   position: relative;
@@ -66,8 +61,10 @@ export const OpenPage = styled.div`
 `;
 
 export const ProjectDescription = styled.div`
+  
   margin: 10px 0;
   display: flex;
+  display: none; /* remove */
   flex-flow: column nowrap;
   width: 100%;
   @media (min-width: 768px) {
@@ -75,24 +72,9 @@ export const ProjectDescription = styled.div`
   }
 `;
 export const ProjectTitle = styled.h2`
+  display: none; /* remove */
   text-align: start;
   font-family: 'Outfit', sans-serif;
 `;
 export const ProjectTools = styled.ul`
-`;
-export const PortfolioTitle = styled.h1`
-  color: ${(props) => props.theme.textColors.secondary};
-  letter-spacing: 1px;
-  padding: 30px 10%;
-  width: 100%;
-  @media (min-width: 768px) {
-    text-align: center;
-    padding: 30px 0 70px;
-  }
-  @media (min-width: 768px) {
-  font-size: 2em;
-  }
-  @media (min-width: 1024px) {
-  font-size: 3em;
-  }
 `;
