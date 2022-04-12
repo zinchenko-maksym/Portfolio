@@ -2,24 +2,24 @@ import React, { Props } from 'react';
 import * as Styled from './style';
 
 interface ProjectProps {
-  adress: string,
   image: string,
   title: string,
   usedTools: string,
+  place: string
 }
 
 function Project({
-  adress, image, title, usedTools,
+  image, title, usedTools, place,
 }: ProjectProps) {
   return (
-    <Styled.Project target="_blank" href={adress}>
+    <Styled.Project place={place}>
       <Styled.ProjectImageWrap>
         <Styled.ProjectImage src={image} />
-        <Styled.ProjectImageHover>
-          <Styled.OpenPage>Open Project</Styled.OpenPage>
+        <Styled.ProjectImageHover place={place}>
+          <Styled.OpenPage place={place}>Open Project</Styled.OpenPage>
         </Styled.ProjectImageHover>
       </Styled.ProjectImageWrap>
-      <Styled.ProjectDescription>
+      <Styled.ProjectDescription place={place}>
         <Styled.ProjectTitle>
           {title}
         </Styled.ProjectTitle>

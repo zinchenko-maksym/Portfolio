@@ -50,22 +50,22 @@ function Portfolio() {
       return (
         <Styled.ProjectWrapLeft onClick={() => handleSlideChange('left')} key={item.title}>
           <Project
-            adress={item.adress}
             image={item.image}
             title={item.title}
             usedTools={item.usedTools}
+            place="side"
           />
         </Styled.ProjectWrapLeft>
       );
     }
     if (index === currentSlide) {
       return (
-        <Styled.ProjectWrapCenter key={item.title} isCurrent>
+        <Styled.ProjectWrapCenter key={item.title} target="_blank" href={item.adress}>
           <Project
-            adress={item.adress}
             image={item.image}
             title={item.title}
             usedTools={item.usedTools}
+            place="center"
           />
         </Styled.ProjectWrapCenter>
       );
@@ -74,15 +74,24 @@ function Portfolio() {
       return (
         <Styled.ProjectWrapRight onClick={() => handleSlideChange('right')} key={item.title}>
           <Project
-            adress={item.adress}
             image={item.image}
             title={item.title}
             usedTools={item.usedTools}
+            place="side"
           />
         </Styled.ProjectWrapRight>
       );
     }
-    return null;
+    return (
+      <Styled.ProjectWrapRight key={item.title}>
+        <Project
+          image={item.image}
+          title={item.title}
+          usedTools={item.usedTools}
+          place="hidden"
+        />
+      </Styled.ProjectWrapRight>
+    );
   });
 
   return (

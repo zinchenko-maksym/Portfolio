@@ -19,7 +19,7 @@ const SkillsWrap = styled.section`
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 50px 2%;
+    padding: 50px 2% 80px;
   }
 `;
 const SkillsTitle = styled.h1`
@@ -29,7 +29,7 @@ const SkillsTitle = styled.h1`
   font-size: 2em;
   }
   @media (min-width: 1024px) {
-  font-size: 2.6em;
+  font-size: 3.2em;
   }
   @media (min-width: 1440px) {
     width: 100%;

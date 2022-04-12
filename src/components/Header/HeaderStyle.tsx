@@ -15,7 +15,7 @@ export const HeaderWrap = styled.header`
   position: fixed;
   width: 100%;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 100;
   padding: 8px 20px;
   @media (min-width: 1024px){
     padding: 4px 20px;
