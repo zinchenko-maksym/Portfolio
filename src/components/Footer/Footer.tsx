@@ -11,12 +11,18 @@ const FooterWrap = styled.footer`
 `;
 const SocialLink = styled.a`
   display: flex;
+  position: relative;
   color: ${(props) => props.theme.mainColors.white};
   margin: 10px 16px;
   font-size: 1.8rem;
   text-align: center;
   @media (min-width: 768px) {
     margin: 12px 3%;
+  }
+  top: 0;
+  transition: top ease-in 0.3s;
+  &:hover{
+    top: -8px;
   }
 `;
 function Footer() {

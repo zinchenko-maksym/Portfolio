@@ -83,14 +83,14 @@ function Portfolio() {
       );
     }
     return (
-      <Styled.ProjectWrapRight key={item.title}>
+      <Styled.ProjectWrapSide key={item.title}>
         <Project
           image={item.image}
           title={item.title}
           usedTools={item.usedTools}
           place="hidden"
         />
-      </Styled.ProjectWrapRight>
+      </Styled.ProjectWrapSide>
     );
   });
 

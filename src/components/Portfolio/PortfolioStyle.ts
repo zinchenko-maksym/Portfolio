@@ -27,14 +27,16 @@ export const ProjectList = styled.section`
 export const ProjectWrapCenter = styled.a`
 @media (min-width: 768px) {
   display: flex;
-  width: 50%;
-  z-index:2;
+  width: 50vw;
+  height: calc(26vw + 60);
+  z-index:3;
   }
   
 `;
 export const ProjectWrapSide = styled.article`
   @media (min-width: 768px) {
-    width: 36%;
+    width: 36vw;
+    height: 19vw;
     position: absolute;
     box-shadow: inset 1px 1px 4px rgba(255,255,255,0.5);
     display: flex;
@@ -54,6 +56,7 @@ export const ProjectWrapLeft = styled(ProjectWrapSide)`
 `;
 export const ProjectWrapRight = styled(ProjectWrapSide)`
   @media (min-width: 768px) {
+    z-index:2;/* Remove later if fixed */
     right:40px;
   }
   @media (min-width: 1024px) {

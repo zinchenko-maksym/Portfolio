@@ -5,7 +5,7 @@ interface MenuButton {
 }
 
 export const Project = styled.section<MenuButton>`
-  display: ${(props) => (props.place === 'hidden' ? 'none' : 'block')};;
+  display: ${(props) => (props.place === 'hidden' ? 'none' : 'block')};
   width: 100%;
   border-radius: 4px;
   text-decoration: none;
@@ -21,7 +21,6 @@ export const ProjectImageWrap = styled.section`
 
 export const ProjectImage = styled.img`
 
-  border-radius: px;
   width: 100%;
   border-radius: 8px;
   vertical-align: top;
