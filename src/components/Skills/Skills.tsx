@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Skill from './Skill';
+import Skill from './Skill/index';
 
 const SkillsWrap = styled.section`
   display: flex;
@@ -41,40 +41,27 @@ const SkillsTitle = styled.h1`
 
 function Skills() {
   const skills = [
-    {
-      name: 'HTML & CSS',
-      subSkills: [{ name: 'Sass', mastery: 70 }, { name: 'Styled Components', mastery: 80 }],
-      mastery: 80,
-    },
-    {
-      name: 'JavaScript',
-      subSkills: [{ name: 'ES6+', mastery: 90 }, { name: 'TypeScript', mastery: 70 }, { name: 'Rest APIs', mastery: 90 }],
-      mastery: 80,
-    },
-    {
-      name: 'ReactJS',
-      subSkills: [{ name: 'Hooks', mastery: 80 }, { name: 'Redux', mastery: 90 }, { name: 'Styled Components', mastery: 80 }, { name: 'Redux-saga', mastery: 70 }],
-      mastery: 80,
-    },
-    {
-      name: 'Backend',
-      subSkills: [{ name: 'Node.js', mastery: 70 }, { name: 'PostgreSQL', mastery: 50 }],
-      mastery: 60,
-    },
+    { skillName: 'HTML', url: './..' },
+    { skillName: 'CSS', url: './..' },
+    { skillName: 'JS', url: './..' },
+    { skillName: 'TypeScript', url: './..' },
+    { skillName: 'React', url: './..' },
+    { skillName: 'NodeJS', url: './..' },
+    { skillName: 'Express', url: './..' },
   ];
   const displaySkills = skills.map(
     (skill) => (
       <Skill
-        subSkills={skill.subSkills}
-        key={skill.name}
-        skillName={skill.name}
-        mastery={skill.mastery}
+        key={skill.skillName}
+        skillImage={skill.url}
+        skillName={skill.skillName}
       />
     ),
   );
   return (
     <SkillsWrap id="Skills">
       <SkillsTitle>Coding Skills</SkillsTitle>
+
       {displaySkills}
     </SkillsWrap>
   );

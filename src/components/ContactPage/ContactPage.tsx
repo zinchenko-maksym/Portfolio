@@ -25,7 +25,6 @@ function ContactPage() {
   const handleChangeTextArea = (event : React.ChangeEvent<HTMLTextAreaElement>) => {
     setValues({ ...values, message: event.target.value });
   };
-  console.log(1);
   async function handleSubmit(event : React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     await axios.post('https://zinmaks.herokuapp.com/email', {
@@ -34,12 +33,15 @@ function ContactPage() {
       phone: values.phone,
       message: values.message,
     })
-      .then((response) => {
-        console.log(response);
-      })
       .catch((error) => {
-        console.log(error);
+        throw error;
       });
+    await setValues({
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
   }
   return (
     <Styled.ContactWrap id="Contact">
