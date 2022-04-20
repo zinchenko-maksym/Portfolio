@@ -26,19 +26,18 @@ export const HeaderWrap = styled.div<MenuButton>`
 
   }
   @media (min-width: 1024px){
-    padding: 15px 40px;
+    padding: 8px 40px;
     height: 70px;
   }
   @media (min-width: 1400px){
-    padding: 15px 80px;
+    padding: 6px 80px;
   }
 `;
 export const Logo = styled.div`
   display: flex;
-  font-family: "Mistral";
+  font-family: "Mistral", sans-serif;
   font-size: 2.2em;
   font-weight: 700;
-  
   cursor: pointer;
   background-color: #f3ec78;
   background-image: linear-gradient(5deg, #ffd700 50%, #0057b7 50%);
@@ -47,6 +46,9 @@ export const Logo = styled.div`
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
+  @media (min-width: 1024px){
+    font-size: 3em;
+  }
 `;
 export const Navbar = styled.nav<MenuButton>`
   padding: 20px 0;
@@ -56,12 +58,15 @@ export const Navbar = styled.nav<MenuButton>`
   align-items: flex-end;
   font-size: 1.6em;
   @media (min-width: 768px){
+    padding: 0;
     font-size: 1.4em;
     font-weight: 700;
     justify-content: flex-end;
     flex-direction: row;
     width: 70%;
-    padding: 0;
+  }
+  @media (min-width: 1024px){
+    margin-top: 8px;
   }
 `;
 
