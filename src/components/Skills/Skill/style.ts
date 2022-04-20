@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const SkillWrap = styled.div`
+  position: relative;
+  top: 0;
   width: 40vw;
   height: 50vw;
-  max-width: 160px;
-  max-height: 220px;
+  max-width: 140px;
+  max-height: 180px;
   margin: 12px 10px;
   background-color: white;
   display: flex;
@@ -13,11 +15,12 @@ export const SkillWrap = styled.div`
   flex-direction: column;
   cursor: pointer;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 4px 30px #222;
+  box-shadow: 0px 4px 30px #333;
   user-select: none;
-  transition: box-shadow 0.4s ease-out;
+  transition: box-shadow 0.4s ease-out, top 0.2s ease-out;
   &:hover{
     box-shadow: 0px 4px 30px ${(props) => props.theme.mainColors.tertiary};
+    top: -4px;
   }
   @media (min-width: 1024px) {
     margin: 24px 20px;
@@ -28,21 +31,13 @@ export const SkillWrap = styled.div`
 `;
 export const SkillImage = styled.img`
   width: 70%;
-  @media (min-width: 768px) {
-  }
-  @media (min-width: 1024px) {
-  }
-  @media (min-width: 1440px) {
-  }
 `;
 
 export const SkillName = styled.h3`
-  font-size: 1em;
+  color: ${(props) => props.theme.textColors.secondary};
+  font-size: 0.9em;
+  font-family: 'Outfit', sans-serif;
   @media (min-width: 768px) {
-    font-size: 1.2em;
-  }
-  @media (min-width: 1024px) {
-  }
-  @media (min-width: 1440px) {
+    font-size: 1em;
   }
 `;

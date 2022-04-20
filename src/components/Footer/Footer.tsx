@@ -20,9 +20,9 @@ const SocialLink = styled.a`
     margin: 12px 3%;
   }
   top: 0;
-  transition: top ease-in 0.3s;
+  transition: top ease-in 0.2s;
   &:hover{
-    top: -8px;
+    top: -4px;
   }
 `;
 function Footer() {

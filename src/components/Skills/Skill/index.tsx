@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as Styled from './style';
-import MasteryScale from '../MasteryScale/MasteryScale';
 
 interface SkillProps {
   skillName: string;
