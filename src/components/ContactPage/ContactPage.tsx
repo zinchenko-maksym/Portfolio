@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import * as Styled from './ContactStyled';
+import SubmitAlert from './SubmitAlert';
 
 interface Values {
   name: string,
@@ -10,7 +11,17 @@ interface Values {
 }
 
 function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
+  const [submited, setSubmited] = useState({
+    complete: false,
+    status: -1,
+  });
+
+  const submitHandle = (com = false, st = -1) => {
+    setSubmited({
+      status: st,
+      complete: com,
+    });
+  };
 
   const [values, setValues] = useState<Values>({
     name: '',
@@ -32,6 +43,8 @@ function ContactPage() {
       email: values.email,
       phone: values.phone,
       message: values.message,
+    }).then((res) => {
+      submitHandle(true, res.status);
     })
       .catch((error) => {
         throw error;
@@ -43,16 +56,22 @@ function ContactPage() {
       message: '',
     });
   }
+
   return (
     <Styled.ContactWrap id="Contact">
       <Styled.ContactTitle>Have a question? Feel free to contact me!</Styled.ContactTitle>
       <Styled.ContactForm onSubmit={(e) => handleSubmit(e)}>
-        <Styled.TextImput onChange={handleChangeInput} type="name" name="name" placeholder="Full Name" required />
-        <Styled.TextImput onChange={handleChangeInput} type="email" name="email" placeholder="Email Adress" required />
-        <Styled.TextImput onChange={handleChangeInput} type="phone" name="phone" placeholder="Phone (Optional)" />
-        <Styled.TextAreaImput onChange={handleChangeTextArea} placeholder="Your message" required />
+        <Styled.TextImput onChange={handleChangeInput} value={values.name} type="name" name="name" placeholder="Full Name" required />
+        <Styled.TextImput onChange={handleChangeInput} value={values.email} type="email" name="email" placeholder="Email Adress" required />
+        <Styled.TextImput onChange={handleChangeInput} value={values.phone} type="phone" name="phone" placeholder="Phone (Optional)" />
+        <Styled.TextAreaImput onChange={handleChangeTextArea} value={values.message} placeholder="Your message" required />
         <Styled.SubmitButton type="submit">Send message</Styled.SubmitButton>
       </Styled.ContactForm>
+      <SubmitAlert
+        submited={submited.complete}
+        submitHandle={submitHandle}
+        status={submited.status}
+      />
     </Styled.ContactWrap>
   );
 }
