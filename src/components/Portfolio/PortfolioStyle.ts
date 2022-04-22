@@ -2,81 +2,44 @@ import styled from 'styled-components';
 
 export const PortfolioWrap = styled.section`
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: ${(props) => props.theme.mainColors.secondary};
-  font-size:  1.2em;
-  @media (min-width: 768px) {
-    padding-bottom: 50px ;
+  align-items: center;
+  font-size: 1em;
+  @media (min-width: 768px){
+    font-size: 1.2em;
   }
-  @media (min-width: 1024px) {
-    padding-bottom: 70px ;
-  }
+  @media (min-width: 1024px){
+      padding: 40px 5vw ;
+    }
 `;
 export const ProjectList = styled.section`
   display: flex;
-  flex-flow: column wrap;
-  padding:  0 40px ;
-  @media (min-width: 768px) {
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+  flex-flow: row wrap;
+  justify-content: space-around;
 `;
 
-export const ProjectWrapCenter = styled.a`
-@media (min-width: 768px) {
-  display: flex;
-  width: 50vw;
-  height: calc(26vw + 60);
-  z-index:3;
-  }
-  
-`;
-export const ProjectWrapSide = styled.article`
-  @media (min-width: 768px) {
-    width: 36vw;
-    height: 19vw;
-    position: absolute;
-    box-shadow: inset 1px 1px 4px rgba(255,255,255,0.5);
-    display: flex;
-    top: 10%;
-    @media (min-width: 1024px) {
-      
+export const Project = styled.a`
+    margin-top: 20px;
+    cursor: pointer;
+    color: ${(props) => props.theme.textColors.secondary};
+    @media (min-width: 1024px){
+      max-width:  40vw;
     }
-  }
-`;
-export const ProjectWrapLeft = styled(ProjectWrapSide)`
-  @media (min-width: 768px) {
-    left:40px;
-  }
-  @media (min-width: 1024px) {
-    left: 5%;
-  }
-`;
-export const ProjectWrapRight = styled(ProjectWrapSide)`
-  @media (min-width: 768px) {
-    z-index:2;/* Remove later if fixed */
-    right:40px;
-  }
-  @media (min-width: 1024px) {
-    right: 5%;
-  }
+    @media (min-width: 1440px){
+      border-radius: 10px;
+      box-shadow: 0 2px 20px #555;
+      overflow: hidden;
+      margin: 40px 0;
+    }
 `;
 export const PortfolioTitle = styled.h1`
-  color: ${(props) => props.theme.textColors.secondary};
-  letter-spacing: 1px;
-  width: 100%;
-  text-align: center;
-  font-size: 1.8em;
-  margin: 30px 0;
-  @media (min-width: 768px) {
-    margin: 40px 0;
-    text-align: center;
-    font-size: 2em;
+  font-size: 2em;
+  @media (min-width: 768px){
+    font-size: 2.2em;
   }
-  @media (min-width: 1024px) {
-    margin: 50px 0;
-    font-size: 3.2em;
-  }
+  @media (min-width: 1024px){
+    font-size: 2.6em;
+      margin-bottom: 20px;
+    }
 `;

@@ -32,16 +32,16 @@ const SocialLink = styled.a`
 function Footer() {
   return (
     <FooterWrap>
-      <SocialLink href="https://t.me/Maksym_Zinchenko">
+      <SocialLink target="_blank" href="https://t.me/Maksym_Zinchenko">
         <FaTelegramPlane />
       </SocialLink>
-      <SocialLink href="https://www.facebook.com/maksym.zinchenko.54">
+      <SocialLink target="_blank" href="https://www.facebook.com/maksym.zinchenko.54">
         <FaFacebookF />
       </SocialLink>
-      <SocialLink href="https://github.com/maklaut007">
+      <SocialLink target="_blank" href="https://github.com/maklaut007">
         <FaGithub />
       </SocialLink>
-      <SocialLink href="https://www.linkedin.com/in/maksym-zinchenko-818390175/">
+      <SocialLink target="_blank" href="https://www.linkedin.com/in/maksym-zinchenko-818390175/">
         <FaLinkedinIn />
       </SocialLink>
     </FooterWrap>

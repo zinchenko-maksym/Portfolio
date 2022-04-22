@@ -11,7 +11,7 @@ import gitImg from '../../assets/skills/git.png';
 import reduxImg from '../../assets/skills/redux.png';
 import postgreImg from '../../assets/skills/postgresql.png';
 import pythonImg from '../../assets/skills/python.png';
-import * as Styled from './style';
+import * as Styled from './SkillsStyle';
 
 interface SkillProps{
   skillName: string,

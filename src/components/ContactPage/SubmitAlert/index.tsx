@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import * as Styled from './style';
 
 interface SubmitData {
@@ -8,16 +8,11 @@ interface SubmitData {
 }
 
 function SubmitAlert({ submited, status, submitHandle } : SubmitData) {
-  const submitSuccess = () => {
-    if (submited) {
-      console.log(2);
-    }
-  };
-  useEffect(() => {
-    if (submited && status === 250) {
-      console.log(1);
-    }
-  }, [submited]);
+  // useEffect(() => {
+  //   if (submited && status === 250) {
+  //     console.log(1);
+  //   }
+  // }, [submited]);
 
   return (
     <Styled.SubmitAlert submited={submited} id="Contact">

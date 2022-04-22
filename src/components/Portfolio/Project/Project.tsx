@@ -5,21 +5,18 @@ interface ProjectProps {
   image: string,
   title: string,
   usedTools: string,
-  place: string
 }
 
 function Project({
-  image, title, usedTools, place,
+  image, title, usedTools,
 }: ProjectProps) {
   return (
-    <Styled.Project place={place}>
+    <Styled.Project>
+      <Styled.ProjectInnerShadow />
       <Styled.ProjectImageWrap>
         <Styled.ProjectImage src={image} />
-        <Styled.ProjectImageHover place={place}>
-          <Styled.OpenPage place={place}>Open Project</Styled.OpenPage>
-        </Styled.ProjectImageHover>
       </Styled.ProjectImageWrap>
-      <Styled.ProjectDescription place={place}>
+      <Styled.ProjectDescription>
         <Styled.ProjectTitle>
           {title}
         </Styled.ProjectTitle>

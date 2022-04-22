@@ -1,84 +1,76 @@
 import styled from 'styled-components';
 
-interface MenuButton {
-  place: string;
-}
-
-export const Project = styled.section<MenuButton>`
-  display: ${(props) => (props.place === 'hidden' ? 'none' : 'block')};
-  width: 100%;
-  border-radius: 4px;
-  text-decoration: none;
-  color: ${(props) => props.theme.textColors.secondary};
-  cursor: pointer;
+export const ProjectDescription = styled.div`
+    @media (min-width: 1440px){
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 30px 50px 30px;
+      transition: opacity 0.6s ease-out, bottom 0.5s ease-out;
+      background-color: ${(props) => props.theme.mainColors.tertiary};
+      color: white;
+      bottom: -40%;
+      left: 0px;
+      width: 100%;
+      opacity: 0%;
+    }
 `;
-export const ProjectImageWrap = styled.section`
+
+export const ProjectInnerShadow = styled.section`
+  opacity: 0;
+  @media (min-width: 1440px){
+  transition: opacity 0.6s ease-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  }
+  
+`;
+export const Project = styled.section`
+  margin-bottom: 30px;
+  width: 100%;
   position: relative;
-  border-radius: 8px;
+  &:hover {
+    ${ProjectDescription} {
+      transition: opacity 0.6s ease-out, bottom 0.5s ease-out;
+      bottom: 0;
+      opacity: 100%;
+    }
+    ${ProjectInnerShadow} {
+      transition: opacity 0.6s ease-out;
+      opacity: 50%;
+    }
+  }
+  @media (min-width: 1440px){
+    margin-bottom: 0;
+  }
+`;
+
+export const ProjectImageWrap = styled.section`
+  box-shadow: inset 0px 0px 2px white;
+  border-radius: 10px;
   overflow: hidden;
-  user-select: none;
+  box-shadow: 0 2px 20px #555;
+  @media (min-width: 1440px){
+    box-shadow: none;
+  }
 `;
 
 export const ProjectImage = styled.img`
-
-  width: 100%;
-  border-radius: 8px;
+  width: 90vw;
   vertical-align: top;
-`;
-
-export const ProjectImageHover = styled.div<MenuButton>`
-  display: none;
-  @media (min-width: 768px) {
-    position: absolute;
+  @media (min-width: 1024px){
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: ${(props) => (props.place === 'center' ? '0' : '80%')};
-    background-color: black;
-    transition: opacity 0.3s ease-out;
-    background-color: rgba(0,0,0,0.7);
-    font-weight: 600;
-    letter-spacing: 1px;
-    &:hover{
-      opacity: ${(props) => (props.place === 'center' ? '100%' : '50%')};
     }
-  }
-  
 `;
 
-export const OpenPage = styled.div<MenuButton>`
-  @media (min-width: 768px) {
-    display: ${(props) => (props.place === 'center' ? 'flex' : 'none')};
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    height: 20%;
-    border-radius: 100px;
-    background-color: rgba(255,255,255,0.2);
-    color: ${(props) => props.theme.textColors.primary};
-    text-transform: uppercase;
-    font-size: 1em;
-    font-family: 'Outfit', sans-serif;
-  } 
-`;
-
-export const ProjectDescription = styled.div<MenuButton>`
-  margin: 10px 0 30px;
-  
-  flex-flow: column nowrap;
-  width: 100%;
-  @media (min-width: 768px) {
-    display: ${(props) => (props.place === 'center' ? 'flex' : 'none')};
-    margin: 20px 0;
-  }
-`;
 export const ProjectTitle = styled.h2`
+  margin-top: 10px;
   text-align: start;
   font-family: 'Outfit', sans-serif;
+  font-size: 1.4em;
+  
 `;
 export const ProjectTools = styled.ul`
 `;
