@@ -8,9 +8,7 @@ interface SocialLinkProps {
 function SocialLink({ adress, children }: SocialLinkProps) {
   return (
     <Styled.SocialLink href={adress} target="_blank">
-      <Styled.MainCircle>
-        {children}
-      </Styled.MainCircle>
+      <Styled.MainCircle>{children}</Styled.MainCircle>
       <Styled.PulsingCircle />
     </Styled.SocialLink>
   );

@@ -33,15 +33,17 @@ function Portfolio() {
       usedTools: 'React | NodeJS | Express',
     },
   ];
-  const mapProjects = projects.map((item) => (
-    <Styled.Project target="_blank" href={item.adress} key={item.title}>
-      <Project
-        image={item.image}
-        title={item.title}
-        usedTools={item.usedTools}
-      />
-    </Styled.Project>
-  ));
+  const mapProjects = projects.map((item) => {
+    return (
+      <Styled.Project target="_blank" href={item.adress} key={item.title}>
+        <Project
+          image={item.image}
+          title={item.title}
+          usedTools={item.usedTools}
+        />
+      </Styled.Project>
+    );
+  });
 
   return (
     <Styled.PortfolioWrap id="Portfolio">

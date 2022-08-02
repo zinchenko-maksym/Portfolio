@@ -12,6 +12,6 @@ declare module 'styled-components' {
     textColors: {
       primary: string;
       secondary: string;
-    }
+    };
   }
 }

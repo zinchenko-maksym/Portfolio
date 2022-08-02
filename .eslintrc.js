@@ -16,12 +16,13 @@ module.exports = {
     ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', '@typescript-eslint'],
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.js', '.jsx'] }],
+    'arrow-body-style': ['error', 'always'],
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.tsx', '.js', '.jsx'] },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',

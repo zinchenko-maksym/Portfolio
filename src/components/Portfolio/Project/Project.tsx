@@ -1,15 +1,13 @@
-import React, { Props } from 'react';
+import React from 'react';
 import * as Styled from './style';
 
 interface ProjectProps {
-  image: string,
-  title: string,
-  usedTools: string,
+  image: string;
+  title: string;
+  usedTools: string;
 }
 
-function Project({
-  image, title, usedTools,
-}: ProjectProps) {
+function Project({ image, title, usedTools }: ProjectProps) {
   return (
     <Styled.Project>
       <Styled.ProjectInnerShadow />
@@ -17,12 +15,8 @@ function Project({
         <Styled.ProjectImage src={image} />
       </Styled.ProjectImageWrap>
       <Styled.ProjectDescription>
-        <Styled.ProjectTitle>
-          {title}
-        </Styled.ProjectTitle>
-        <Styled.ProjectTools>
-          {usedTools}
-        </Styled.ProjectTools>
+        <Styled.ProjectTitle>{title}</Styled.ProjectTitle>
+        <Styled.ProjectTools>{usedTools}</Styled.ProjectTools>
       </Styled.ProjectDescription>
     </Styled.Project>
   );

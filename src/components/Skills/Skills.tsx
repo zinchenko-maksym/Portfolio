@@ -13,13 +13,13 @@ import postgreImg from '../../assets/skills/postgresql.png';
 import pythonImg from '../../assets/skills/python.png';
 import * as Styled from './SkillsStyle';
 
-interface SkillProps{
-  skillName: string,
-  url: string,
+interface SkillProps {
+  skillName: string;
+  url: string;
 }
-interface SkillGroupProps{
-  groupName: string,
-  list: SkillProps[],
+interface SkillGroupProps {
+  groupName: string;
+  list: SkillProps[];
 }
 
 function Skills() {
@@ -52,23 +52,25 @@ function Skills() {
     },
   ];
 
-  const displaySkills = (index: number) => skills[index].list.map(
-    (skill) => (
-      <Skill
-        key={skill.skillName}
-        skillImage={skill.url}
-        skillName={skill.skillName}
-      />
-    ),
-  );
-  const displaySkillsGroups = skills.map(
-    (group: SkillGroupProps, index) => (
+  const displaySkills = (index: number) => {
+    return skills[index].list.map((skill) => {
+      return (
+        <Skill
+          key={skill.skillName}
+          skillImage={skill.url}
+          skillName={skill.skillName}
+        />
+      );
+    });
+  };
+  const displaySkillsGroups = skills.map((group: SkillGroupProps, index) => {
+    return (
       <Styled.SkillGroup key={group.groupName}>
         <Styled.GroupName>{group.groupName}</Styled.GroupName>
         <Styled.SkillsList>{displaySkills(index)}</Styled.SkillsList>
       </Styled.SkillGroup>
-    ),
-  );
+    );
+  });
   return (
     <Styled.SkillsWrap id="Skills">
       <Styled.SkillsTitle>Coding Skills</Styled.SkillsTitle>

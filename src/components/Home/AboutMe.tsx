@@ -18,8 +18,9 @@ function AboutMe() {
           Web Developer located in Chicago, IL.
         </Styled.AboutMeText>
         <Styled.Resume href={ResumeFile} download>
-          <Styled.Circle><FaDownload /></Styled.Circle>
-          {' '}
+          <Styled.Circle>
+            <FaDownload />
+          </Styled.Circle>
           <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
           <Styled.ResumeBtnHover>Download</Styled.ResumeBtnHover>
         </Styled.Resume>

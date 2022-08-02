@@ -10,9 +10,7 @@ function Skill({ skillName, skillImage }: SkillProps) {
   return (
     <Styled.SkillWrap>
       <Styled.SkillImage src={skillImage} />
-      <Styled.SkillName>
-        {skillName}
-      </Styled.SkillName>
+      <Styled.SkillName>{skillName}</Styled.SkillName>
     </Styled.SkillWrap>
   );
 }

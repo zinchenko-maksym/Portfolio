@@ -18,15 +18,14 @@ export const SkillWrap = styled.div`
   box-shadow: 0px 4px 30px #333;
   user-select: none;
   transition: box-shadow 0.4s ease-out, top 0.2s ease-out;
-  &:hover{
-    box-shadow: 0px 4px 30px ${(props) => props.theme.mainColors.tertiary};
+  &:hover {
+    box-shadow: 0px 4px 30px ${(props) => { return props.theme.mainColors.tertiary; }};
     top: -4px;
   }
   @media (min-width: 1024px) {
     margin: 24px 20px;
   }
   @media (min-width: 1440px) {
-    
   }
 `;
 export const SkillImage = styled.img`
@@ -34,7 +33,7 @@ export const SkillImage = styled.img`
 `;
 
 export const SkillName = styled.h3`
-  color: ${(props) => props.theme.textColors.secondary};
+  color: ${(props) => { return props.theme.textColors.secondary; }};
   font-size: 0.9em;
   font-family: 'Outfit', sans-serif;
   @media (min-width: 768px) {

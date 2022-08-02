@@ -29,7 +29,7 @@ export const PulsingCircle = styled.div`
   opacity: 0;
 `;
 export const MainCircle = styled.div`
-  background-color: ${(props) => props.theme.mainColors.tertiary};
+  background-color: ${(props) => { return props.theme.mainColors.tertiary; }};
   width: 100%;
   height: 100%;
   display: flex;
@@ -45,7 +45,7 @@ export const SocialLink = styled.a`
   max-height: 70px;
   justify-content: center;
   align-items: center;
-  color: ${(props) => props.theme.textColors.primary};
+  color: ${(props) => { return props.theme.textColors.primary; }};
   position: absolute;
   font-size: 1.4rem;
   border-radius: 60px;
@@ -73,14 +73,11 @@ export const SocialLink = styled.a`
   @media (min-width: 768px) {
     width: 6vw;
     height: 6vw;
-    &:hover ${PulsingCircle}{
-      animation: ${scaleOut} 1s infinite cubic-bezier(.3,.44,.86,1.56);
+    &:hover ${PulsingCircle} {
+      animation: ${scaleOut} 1s infinite cubic-bezier(0.3, 0.44, 0.86, 1.56);
     }
-    &:hover ${MainCircle}{
-      animation: ${scaleIn} 1s infinite cubic-bezier(.3,.44,.86,1.56);
+    &:hover ${MainCircle} {
+      animation: ${scaleIn} 1s infinite cubic-bezier(0.3, 0.44, 0.86, 1.56);
     }
   }
-
-
-  
 `;

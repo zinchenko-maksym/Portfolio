@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const AboutMeWrap = styled.section`
   display: flex;
-  font-size:  1.2em;
+  font-size: 1.2em;
   font-weight: 600;
   flex-flow: column wrap;
   align-items: center;
   padding: 60px 24px 0;
-  background-color: ${(props) => props.theme.mainColors.primary};
+  background-color: ${(props) => { return props.theme.mainColors.primary; }};
   @media (min-width: 768px) {
     flex-flow: row-reverse nowrap;
     padding: 90px 60px 40px;
@@ -35,7 +35,7 @@ export const MyName = styled.span`
 `;
 export const Info = styled.div`
   margin: 20px 0;
-  color: ${(props) => props.theme.textColors.primary};
+  color: ${(props) => { return props.theme.textColors.primary; }};
   align-self: flex-start;
   flex-grow: 1;
   display: flex;
@@ -47,7 +47,7 @@ export const Info = styled.div`
 `;
 export const AboutMeText = styled.p`
   margin: 10px 0;
-  color: ${(props) => props.theme.mainColors.secondary};
+  color: ${(props) => { return props.theme.mainColors.secondary; }};
   font-family: 'Outfit', sans-serif;
   @media (min-width: 768px) {
     margin: 30px 0;
@@ -73,14 +73,14 @@ export const ResumeBtnHover = styled.span`
   transition: left 0.4s ease-out, opacity 0.3s ease-in;
 `;
 export const Circle = styled.span`
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: ${(props) => props.theme.textColors.primary};
-    left: 15%;
-    transition: left 0.4s ease-out;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: ${(props) => { return props.theme.textColors.primary; }};
+  left: 15%;
+  transition: left 0.4s ease-out;
 `;
 export const Resume = styled.a`
   display: flex;
@@ -92,12 +92,12 @@ export const Resume = styled.a`
   width: 190px;
   height: 50px;
   border-radius: 18px;
-  box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.32);
-  background-color: ${(props) => props.theme.mainColors.tertiary};
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.32);
+  background-color: ${(props) => { return props.theme.mainColors.tertiary; }};
   font-size: 0.9em;
-  border: 2px solid ${(props) => props.theme.mainColors.primary};
-  color: ${(props) => props.theme.textColors.primary};
-  &:hover{
+  border: 2px solid ${(props) => { return props.theme.mainColors.primary; }};
+  color: ${(props) => { return props.theme.textColors.primary; }};
+  &:hover {
     cursor: pointer;
     ${ResumeBtnText} {
       opacity: 0%;

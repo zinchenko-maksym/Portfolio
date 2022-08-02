@@ -1,6 +1,9 @@
 import React from 'react';
 import {
-  FaFacebookF, FaTelegramPlane, FaLinkedinIn, FaGithubSquare,
+  FaFacebookF,
+  FaTelegramPlane,
+  FaLinkedinIn,
+  FaGithubSquare,
 } from 'react-icons/fa';
 import * as Styled from './ProfilePictureStyle';
 import myPhoto from '../../../assets/MyPhoto.jpg';
