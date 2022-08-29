@@ -1,2 +1,2 @@
 declare module '*.ttf';
-declare module '*.docx';
+declare module '*.pdf';

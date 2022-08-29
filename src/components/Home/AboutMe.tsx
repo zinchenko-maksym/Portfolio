@@ -2,7 +2,7 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import * as Styled from './AboutMeStyle';
 import ProfilePicture from './ProfilePicture/ProfilePicture';
-import ResumeFile from '../../assets/Resume.docx';
+import ResumeFile from '../../assets/Resume.pdf';
 
 function AboutMe() {
   return (

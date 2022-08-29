@@ -8,22 +8,26 @@ import {
 } from 'react-icons/fa';
 
 const FooterWrap = styled.footer`
-  background-color: ${(props) => { return props.theme.mainColors.primary; }};
+  background-color: ${(props) => {
+    return props.theme.mainColors.primary;
+  }};
   display: flex;
   justify-content: center;
 `;
 const SocialLink = styled.a`
   display: flex;
   position: relative;
-  color: ${(props) => { return props.theme.mainColors.white; }};
-  margin: 10px 16px;
+  color: ${(props) => {
+    return props.theme.mainColors.white;
+  }};
+  margin: 18px 16px;
   font-size: 1.8rem;
   text-align: center;
   @media (min-width: 768px) {
-    margin: 12px 3%;
+    margin: 20px 3%;
   }
   @media (min-width: 1440px) {
-    margin: 14px 3%;
+    margin: 20px 3%;
   }
   top: 0;
   transition: top ease-in 0.2s;

@@ -8,7 +8,7 @@ export const ContactWrap = styled.section`
   align-items: center;
   flex-flow: column;
   @media (min-width: 768px) {
-    padding: 60px 10px;
+    padding: 70px 10px;
   }
 `;
 export const ContactTitle = styled.h1`
@@ -33,7 +33,7 @@ export const ContactForm = styled.form`
 `;
 export const TextImput = styled.input`
   width: 100%;
-  margin: 10px 0;
+  margin: 14px 0;
   padding: 10px;
   background-color: inherit;
   border: 1px solid ${(props) => { return props.theme.mainColors.tertiary; }};

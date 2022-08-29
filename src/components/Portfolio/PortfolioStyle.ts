@@ -3,9 +3,12 @@ import styled from 'styled-components';
 export const PortfolioWrap = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: ${(props) => { return props.theme.mainColors.secondary; }};
+  background-color: ${(props) => {
+    return props.theme.mainColors.secondary;
+  }};
   align-items: center;
   font-size: 1em;
+  padding: 40px 0;
   @media (min-width: 768px) {
     font-size: 1.2em;
   }
@@ -22,7 +25,9 @@ export const ProjectList = styled.section`
 export const Project = styled.a`
   margin-top: 20px;
   cursor: pointer;
-  color: ${(props) => { return props.theme.textColors.secondary; }};
+  color: ${(props) => {
+    return props.theme.textColors.secondary;
+  }};
   @media (min-width: 1024px) {
     max-width: 40vw;
   }
