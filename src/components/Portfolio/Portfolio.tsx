@@ -21,13 +21,13 @@ function Portfolio() {
       usedTools: 'React | Redux | NodeJS | Express',
     },
     {
-      adress: 'https://frontendmentorcountries.herokuapp.com/main',
+      adress: 'https://main.d2fv15eroqkxmv.amplifyapp.com/main',
       image: countriesImg,
       title: 'Countries App',
       usedTools: 'React | TypesScript | Redux | Rest Api',
     },
     {
-      adress: 'https://memory-cards-zm.herokuapp.com',
+      adress: 'https://main.d2u7kn9w5l2vdz.amplifyapp.com',
       image: memoryGameImg,
       title: 'Memory Game',
       usedTools: 'React | NodeJS | Express',
