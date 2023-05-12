@@ -15,14 +15,14 @@ function AboutMe() {
           <Styled.MyName> Maksym Zinchenko</Styled.MyName>
         </Styled.AboutMeHeader>
         <Styled.AboutMeText>
-          Web Developer located in Chicago, IL.
+          Full Stack Developer located in Chicago, IL.
         </Styled.AboutMeText>
-        <Styled.Resume href={ResumeFile} download>
+        <Styled.Resume target="_blank" href="https://docs.google.com/document/d/18r0XNVw5_TXRoouKsc7p1IKCf1hbMH6W/edit?usp=sharing&ouid=108817685570052935018&rtpof=true&sd=true" download>
           <Styled.Circle>
             <FaDownload />
           </Styled.Circle>
           <Styled.ResumeBtnText>My Resume</Styled.ResumeBtnText>
-          <Styled.ResumeBtnHover>Download</Styled.ResumeBtnHover>
+          <Styled.ResumeBtnHover>Open doc</Styled.ResumeBtnHover>
         </Styled.Resume>
       </Styled.Info>
     </Styled.AboutMeWrap>
