@@ -10,7 +10,9 @@ import sassImg from '../../assets/skills/sass.png';
 import gitImg from '../../assets/skills/git.png';
 import reduxImg from '../../assets/skills/redux.png';
 import postgreImg from '../../assets/skills/postgresql.png';
-import pythonImg from '../../assets/skills/python.png';
+import angularImg from '../../assets/skills/angular-icon.png';
+import springImg from '../../assets/skills/spring.png';
+import javaImg from '../../assets/skills/java-icon.png';
 import * as Styled from './SkillsStyle';
 
 interface SkillProps {
@@ -33,6 +35,7 @@ function Skills() {
         { skillName: 'React', url: reactImg },
         { skillName: 'Redux', url: reduxImg },
         { skillName: 'JavaScript', url: jsImg },
+        { skillName: 'Angular', url: angularImg },
       ],
     },
     {
@@ -40,7 +43,8 @@ function Skills() {
       list: [
         { skillName: 'NodeJS', url: nodeImg },
         { skillName: 'Postge SQL', url: postgreImg },
-        { skillName: 'Python', url: pythonImg },
+        { skillName: 'Java', url: javaImg },
+        { skillName: 'Spring', url: springImg },
       ],
     },
     {
