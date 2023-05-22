@@ -106,7 +106,6 @@ function ContactPage() {
       <SubmitAlert
         submited={submited.complete}
         submitHandle={submitHandle}
-        status={submited.status}
       />
     </Styled.ContactWrap>
   );

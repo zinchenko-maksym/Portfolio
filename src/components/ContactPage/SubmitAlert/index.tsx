@@ -3,17 +3,10 @@ import * as Styled from './style';
 
 interface SubmitData {
   submited: boolean;
-  status: number;
-  submitHandle(com?: boolean, st?: number): any;
+  submitHandle(com?: boolean, st?: number): void;
 }
 
-function SubmitAlert({ submited, status, submitHandle }: SubmitData) {
-  // useEffect(() => {
-  //   if (submited && status === 250) {
-  //     console.log(1);
-  //   }
-  // }, [submited]);
-
+function SubmitAlert({ submited, submitHandle }: SubmitData) {
   return (
     <Styled.SubmitAlert submited={submited} id="Contact">
       Message submitted succesfully
