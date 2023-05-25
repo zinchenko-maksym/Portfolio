@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 interface MenuButton {
-  isOpen: boolean;
+  isopen: string;
 }
 
 export const Header = styled.header`
@@ -20,7 +20,7 @@ export const HeaderWrap = styled.div<MenuButton>`
   overflow: hidden;
   background-color: #fff;
   padding: 10px 20px;
-  height: ${(props) => { return (props.isOpen ? '290px' : '60px'); }};
+  height: ${(props) => { return (props.isopen === 'true' ? '290px' : '60px'); }};
   transition: height 0.3s ease-out;
   @media (min-width: 768px) {
   }

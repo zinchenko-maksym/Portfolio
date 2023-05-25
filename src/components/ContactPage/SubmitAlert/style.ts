@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface AlertProps {
-  submited: boolean;
+  submited: string;
 }
 
 export const SubmitAlert = styled.section<AlertProps>`
@@ -9,7 +9,7 @@ export const SubmitAlert = styled.section<AlertProps>`
   background-color: ${(props) => { return props.theme.mainColors.tertiary; }};
   color: ${(props) => { return props.theme.textColors.primary; }};
   top: 70px;
-  right: ${(props) => { return (props.submited ? '10px' : '-100vw'); }};
+  right: ${(props) => { return (props.submited === 'true' ? '10px' : '-100vw'); }};
   transition: right 0.3s ease-out;
   border-radius: 5px;
   display: flex;
@@ -19,7 +19,7 @@ export const SubmitAlert = styled.section<AlertProps>`
 
   @media (min-width: 768px) {
     top: 90px;
-    right: ${(props) => { return (props.submited ? '20px' : '-100vw'); }};
+    right: ${(props) => { return (props.submited === 'true' ? '20px' : '-100vw'); }};
     font-size: 1.1em;
   }
   @media (min-width: 1024px) {

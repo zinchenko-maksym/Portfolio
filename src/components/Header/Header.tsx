@@ -10,12 +10,12 @@ function Header() {
 
   return (
     <Styled.Header>
-      <Styled.HeaderWrap isOpen={menuOpen}>
+      <Styled.HeaderWrap isopen={menuOpen.toString()}>
         <Styled.Logo>ZinMaks</Styled.Logo>
         <Styled.MenuButton onClick={toggleMenu}>
           <HamburgerIcon open={menuOpen} />
         </Styled.MenuButton>
-        <Styled.Navbar isOpen={menuOpen} className="navbar">
+        <Styled.Navbar isopen={menuOpen.toString()} className="navbar">
           <Styled.StyledLink onClick={toggleMenu} to="About" spy smooth>
             About Me
           </Styled.StyledLink>
