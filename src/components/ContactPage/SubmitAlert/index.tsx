@@ -8,7 +8,7 @@ interface SubmitData {
 
 function SubmitAlert({ submited, submitHandle }: SubmitData) {
   return (
-    <Styled.SubmitAlert submited={submited} id="Contact">
+    <Styled.SubmitAlert submited={submited.toString()} id="Contact">
       Message submitted succesfully
       <Styled.CloseAlert
         onClick={() => {
