@@ -68,7 +68,7 @@ function ContactPage() {
         Have a question? Feel free to contact me!
       </Styled.ContactTitle>
       <Styled.ContactForm
-        onSubmit={(e) => {
+        onSubmit={(e:any) => {
           return handleSubmit(e);
         }}
       >
