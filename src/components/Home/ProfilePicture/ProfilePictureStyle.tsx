@@ -25,6 +25,7 @@ export const Photo = styled.img`
   max-height: 560px;
   background-size: 101%;
   border-radius: 100%;
+  object-fit: cover;
   @media (min-width: 768px) {
     width: 40vw;
     height: 40vw;
